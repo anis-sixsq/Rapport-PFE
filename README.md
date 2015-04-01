@@ -1,2 +1,2 @@
 # Rapport-PFE
-Rapport de Projet de fin d'études (SixSq-INSAT-2015)
+Rapport de Projet de Fin d'Études (SixSq-INSAT-2015)
