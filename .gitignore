@@ -1,0 +1,11 @@
+rapport.*
+*.aux
+*.bbl
+*.blg
+*.log
+*.bak
+*.gz
+*.out
+*.pdf
+
+
