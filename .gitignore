@@ -1,4 +1,9 @@
-rapport.*
+*.toc
+*.maf
+*.brf
+*.lot
+*.lof
+*.mt*
 *.aux
 *.bbl
 *.blg
