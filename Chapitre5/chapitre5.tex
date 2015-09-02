@@ -1,0 +1,310 @@
+
+\setcounter{mtc}{9}
+\chapter{Réalisation}
+\minitoc %insert la minitoc
+\graphicspath{{Chapitre5/figures/}}
+
+%\DoPToC
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+
+%==============================================================================
+\section*{Introduction}
+Ce chapitre représente le dernier volet de ce rapport. Il est consacré à la description de la tâche de mise en oeuvre de notre solution. Nous commençons par présenter l'environnement de développement du projet. Ensuite, nous focalisons l'intérêt sur les choix techniques de notre solution. Enfin, nous présentons les réalisations effectuées au cours de ce projet ainsi qu'une évaluation de la solution réalisée.\\\\\\
+
+\section{Environnement de développement}
+Cette partie sera consacrée à la présentation de l'environnement de développement au sein de l'entreprise SixSq. Cet environnement se divise en un ensemble de ressources matérielles et logicielles que nous avons dû adopter pour réaliser ce projet de fin d'études. Mais les ressources logicielles jouent un rôle plus important pour assurer la productivité du projet et la pérennité de notre solution. Pour la réalisation de notre projet, nous avons utilisé:
+
+\begin{itemize}
+\item \textbf{La plateforme SlipStream} : Nous avons utilisé la PaaS SlipStream en mode SaaS pour réaliser les modules du déploiement de Hadoop. Avec SlipStream, nous avons préparé et orchestré les VMs du cluster à déployer.\\
+
+\item \textbf{Le fournisseur Cloud Exoscale} : Tout au long de ce projet, nous avons utilisé le principal fournisseur Cloud en Suisse Exoscale pour lancer nos déploiements afin de tester et valider le bon fonctionnement de notre solution. Nous avons choisi Exoscale vu que SixSq est leur partenaire technologique.\\
+
+\item \textbf {Waffle.io} : est l'outil en mode SaaS intégré avec GitHub que nous avons utilisé pour appliquer la méthodologie de travail Scrum. Cet outil nous permet avec son tableau de bord de visualiser les descriptions, les états, les degrés d'importance, les mile stones, les estimations des durées de travail ... liées à les tâches des sprints.\\
+
+\item \textbf{Cacoo} : est un outil de création de schémas en mode SaaS. Plusieurs personnes peuvent travailler ensemble sur le même schéma en temps réel. Nous avons utilisé cet outil pour réaliser tous les diagrammes UML et les architectures présentées dans ce rapport.\\
+
+\item \textbf{TeXShop} : est l'éditeur TeX pour Mac OS X que nous avons utilisé pour la rédaction du présent rapport.\\
+
+\end{itemize} 
+
+
+
+
+
+\section{Choix techniques}
+\subsection{Outils et langages utilisés}
+Les premières questions que tous les programmeurs et chefs de projets se posent avant de commencer à développer une application sont celles concernant les choix techniques du langage de programmation et des Frameworks utilisés. Par contre, dans notre projet ce n'est pas le cas puisque nous n'avons pas développé une nouvelle application mais nous avons ajouté un nouveau module au sein d'une plateforme. Donc, nous étions obligés d'utiliser tous les outils et les langages utilisés par SlipStream.\\
+
+La réalisation de toute la chaine de déploiement nécessite l'utilisation de la plateforme SlipStream et des différents langages de programmation tel que:
+
+\begin{itemize}
+\item \textbf{Python} : est un langage qui peut s'utiliser dans de nombreux contextes et s'adapter à tout type d'utilisation grâce à des bibliothèques spécialisées. Il est cependant particulièrement utilisé comme langage de script pour automatiser des tâches simples. SlipStream utilise plusieurs connecteurs, programmés en Python, pour communiquer avec les API des Clouds.\\
+
+\item \textbf{Script Shell} : est un langage de programmation qui permet de manipuler les fonctionnalités du système d'exploitation 'Linux' . Nous avons utilisé des scripts Shell pour automatiser toutes les installations et les configurations dans les VMs qui utilisent le système d'exploitation CentOS. Tous ces scripts sont intégrés dans la plateforme SlipStream qui seront transférés lors du déploiement pour qu'ils être exécutés au niveau des VMs.\\
+\end{itemize}
+
+
+\textbf{Remarque}: \\
+Pour les différentes parties comme la gestion des comptes, le tableau de bord, l'AppStore de SlipStream ... etc, nous n'avons pas les programmé mais nous les avons utilisé comme des briques dans notre solution.
+
+
+
+
+\newpage
+
+
+
+\subsection{Fiche technique des VMs}
+Notre solution Big Data utilise 3 types de machines virtuelles: installateur de Hadoop, master et slave. Nous avons choisi une configuration par défaut pour toutes ces machines qui répond aux questions de la performance de calcul et du coût des ressources utilisées. Le tableau Tab \ref{tab:fiche-tec}  présente la fiche technique de ces 3 types de VMs .\\
+
+
+\begin{table}[H]
+	\centering
+	\caption{Fiche technique des VMs utilisées}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\centering{}\vspace*{\fill}}X|>{\centering{}\vspace*{\fill}}X|>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			& \bfseries Installateur de Hadoop & \bfseries Master &\bfseries Slave \\
+			\hline \hline
+			Système d'exploitation		&	Linux CentOS 6 64-bit	&	Linux CentOS 6 64-bit	&	Linux CentOS 6 64-bit	\\
+			\hline
+			Types d'instance possibles		&	\begin{itemize}\item Small*\item Medium\end{itemize} 	&	\begin{itemize}\item Small\item Medium*\item Large\item Extra-large\item Huge\end{itemize} 	&	\begin{itemize}\item Small*\item Medium\item Large\item Extra-large\item Huge\end{itemize}	\\
+			\hline
+			CPU		&	2 x 2198 Mhz	&	\begin{itemize}\item (2 x 2198 Mhz)* \item (8 x 2198 Mhz)**\end{itemize}	&	\begin{itemize}\item (2 x 2198 Mhz)* \item (8 x 2198 Mhz)**\end{itemize}		\\
+			\hline
+			RAM		&	\begin{itemize}\item(2 GB)*\item(4 GB)**\end{itemize}		&	\begin{itemize}\item(4 GB)*\item(32 GB)**\end{itemize}	&	\begin{itemize}\item(2 GB)*\item(32 GB)**\end{itemize}	\\
+			\hline
+			Disc		&	\begin{itemize}\item(10 GB)*\item(400 GB)**\end{itemize}  	&	\begin{itemize}\item(10 GB)*\item(400 GB)**\end{itemize}  	  &	\begin{itemize}\item(10 GB)*\item(400 GB)**\end{itemize}   	\\
+			\hline
+	\end{tabularx}
+	\label{tab:fiche-tec}
+\end{table}
+(*) : Valeur par défaut.     (**) : Valeur maximale possible.\\
+
+
+
+
+
+
+
+
+
+\section{Présentation de la solution}
+
+Dans cette partie, nous présentons un scénario d'utilisation de notre solution Big Data dans ses différentes parties. Nous prenons comme exemple le scénario de la figure \ref{fig:fig5-1} :\\\\
+\begin{figure}[H]\centering
+\includegraphics[scale=0.8]{scenario-demo.png}
+\caption{Déroulement du scénario}
+\label{fig:fig5-1}
+\end{figure}
+
+La figure \ref{fig:fig5-1}  met en relief le déroulement du scénario de la solution Big Data au sein de la plateforme SlipStream . Celui-ci est représenté, dans ce qui suit, avec des interfaces de la solution et leurs descriptions respectives.\\
+
+\newpage
+
+
+
+\subsection{Déployer un cluster Hadoop}
+
+En premier lieu, nous accédons à l'AppStore de SlipStream et déployons un cluster Hadoop avec un 'master' et trois 'slaves'. Ce scenario est présenté par les figures \ref{fig:fig5-2} et \ref{fig:fig5-3}.\\\\
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.9]{0.png}
+\caption{Accés à l'AppStore de SlipStream}
+\label{fig:fig5-2}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.9]{1.png}
+\caption{Paramétrage et lancement d'un déploiement du cluster Hadoop}
+\label{fig:fig5-3}
+\end{figure}
+
+\newpage
+En second lieu, nous attendons la fin du déploiement et au même temps nous suivons l'avancement et les actions exécutées sur le cluster. La figure \ref{fig:fig5-4} illustre l'interface qui nous fournit l'ID, l'état, la durée et la vue globale du déploiement.\\
+\begin{figure}[H]\centering
+\includegraphics[scale=0.7]{2.png}
+\caption{Page du déploiement en état 'Executing'}
+\label{fig:fig5-4}
+\end{figure}
+
+\newpage
+En dernier lieu, le déploiement est effectuée avec succès et toutes les informations sont fournis. Les figures \ref{fig:fig5-5} et \ref{fig:fig5-6}  présentent la page du déploiement.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.65]{3.png}
+\caption{Page du déploiement en état 'Ready'}
+\label{fig:fig5-5}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.63]{4.png}
+\caption{Informations fournis à la fin du déploiement}
+\label{fig:fig5-6}
+\end{figure}
+
+
+
+
+
+
+
+\subsection{Administrer le cluster Hadoop}
+
+Une fois le déploiement terminé, SlipStream nous fournit le lien, le username et le mot de passe pour accéder à l'outil d'administration 'Ambari' en mode SaaS. La figure \ref{fig:fig5-7} présente l'interface d'administration des services de Hadoop.\\\\
+\begin{figure}[H]\centering
+\includegraphics[scale=0.77]{5.png}
+\caption{Interface d'authentification d'Ambari}
+\label{fig:fig5-7}
+\end{figure}
+
+\newpage
+La figure \ref{fig:fig5-8} illustre l'interface d'authentification de cet outil.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.5]{6.png}
+\caption{Interface d'administration des services de Hadoop}
+\label{fig:fig5-8}
+\end{figure}
+
+
+La figure \ref{fig:fig5-9} présente une vue globale sur les VMs du cluster Hadoop.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.5]{6+.png}
+\caption{Interface d'administration des VMs du cluster}
+\label{fig:fig5-9}
+\end{figure}
+
+\newpage
+
+SlipStream nous offre un tableau de bord graphique pour piloter et surveiller les VMs du déploiement. La figure \ref{fig:fig5-10} illustre ce tableau de bord.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.56]{7.png}
+\caption{Tableau de bord SlipStream après le déploiement du Hadoop}
+\label{fig:fig5-10}
+\end{figure}
+
+
+
+
+
+
+
+
+\subsection{Connecter et utiliser la VM master}
+
+Une fois le déploiement terminé, SlipStream nous fournit toutes les informations pour connecter et utiliser la machine master du cluster. Les figures \ref{fig:fig5-11} et \ref{fig:fig5-12} illustrent l'authentification auprès de la VM master via un VNC client, tout en utilisant l'adresse et le mot de passe fournis par SlipStream.
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.51]{8.png}
+\caption{Première phase d'authentification : Adresse}
+\label{fig:fig5-11}
+\end{figure}
+
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.51]{9.png}
+\caption{Deuxième phase d'authentification : Mot de passe}
+\label{fig:fig5-12}
+\end{figure}
+
+
+Après la phase d'authentification, nous connectons directement en mode graphique à la machine. La figure \ref{fig:fig5-13} présente l'utilisation de la VM master. Nous testons le service 'YARN' de Hadoop pour lister les slaves du cluster.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.68]{10.png}
+\caption{Utilisation de la VM master du cluster Hadoop}
+\label{fig:fig5-13}
+\end{figure}
+
+
+
+
+\subsection{Terminer un cluster Hadoop}
+
+Une fois nous avons terminé avec ce cluster, nous pouvons le terminer à partir de SlipStream en cliquons sur le bouton 'Terminate' dans la page du déploiement. La figure \ref{fig:fig5-14}  illustre la terminaison du cluster Hadoop.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.43]{11+.png}
+\caption{Terminaison du cluster Hadoop}
+\label{fig:fig5-14}
+\end{figure}
+
+
+
+
+
+\section{Evaluation de la Solution}
+\subsection{Temps de déploiement}
+Afin de faire une bonne évaluation de notre solution, nous avons déployé manuellement un cluster Hadoop (un master et trois slaves), un outil d'administration  'Ambari' et le reste des outils que nous avons utilisé dans notre solution. Le tableau Tab \ref{tab:deploy-manuel} présente la liste des tâches de ce déploiement avec les durées approximatives pour les réaliser (sans prendre en compte les erreurs et la complexité des configurations).
+
+
+\begin{table}[H]
+	\centering
+	\caption{Tâches et durée de déploiement manuel d'un cluster Hadoop}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			Tâche & \bfseries Durée approximative\\
+			\hline \hline
+			Lancer et configurer un cluster de 4 Vms (1 master et 3 slaves)		&	2 heures	\\
+			\hline
+			Lancer et configurer une VM 'installateur de Hadoop'		&	30 minutes	\\
+			\hline
+			Déployer 'Ambari server' dans la VM 'installateur de Hadoop'		&	1 heure	\\
+			\hline
+			Déployer 'Dnsmasq' dans la VM 'installateur de Hadoop'	&	1 heure	\\
+			\hline
+			Déployer 'VNC server' dans la VM 'master du cluster'		&	1 heure	\\
+			\hline
+			Déployer 'Hadoop et son écosystème' sur le cluster de 4 VMs		&	3 heures	\\
+			\hline
+	\end{tabularx}
+	\label{tab:deploy-manuel}
+\end{table}
+
+
+Ce déploiement manuelle a duré, à peu près, 540 minutes. Ce qui indique que le temps de déploiement de notre solution au sein de SlipStream qui dure 20 minutes ne représente que 4\% du temps d'un déploiement manuel. La figure \ref{fig:fig5-15}  illustre le temps de déploiement de notre solution au sein de SlipStream.\\
+\begin{figure}[H]\centering
+\includegraphics[scale=0.55]{12.png}
+\caption{Le temps de déploiement d'un cluster Hadoop}
+\label{fig:fig5-15}
+\end{figure}
+
+
+
+
+
+
+\subsection{Performance du cluster Hadoop}
+Pour tester la performance de notre solution, nous avons déployé un cluster Hadoop de trois slaves et un master. Ensuite, nous avons lancé un algorithme MapReduce qui exécute, a peu près, 50,000,000 (16 x 3,125,000) opérations élémentaires en 80 secondes pour estimer la valeur du nombre PI (\~3.14).  Les figures  \ref{fig:fig5-16} et  \ref{fig:fig5-17}  présentent la connexion à la VM master en mode SSH et l'exécution de l'algorithme de calcul de Pi.
+
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.72]{13-calcul-pi-1.png}
+\caption{Lancement d'un algorithme MapReduce pour estimer le nombre Pi}
+\label{fig:fig5-16}
+\end{figure}
+
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.72]{14-calcul-pi-2.png}
+\caption{Fin de l'estimation du nombre Pi}
+\label{fig:fig5-17}
+\end{figure}
+
+
+
+\newpage
+
+\section*{Conclusion}
+Au cours de ce chapitre, nous avons décrit l'environnement de développement ainsi que nos choix techniques sur lesquels nous nous sommes basés dans la réalisation de notre projet. Ensuite, à la base d'un scenario typique d'utilisation, nous avons présenté les principales interfaces du projet. En fin, nous avons effectué une évaluation de notre solution Big Data au sein de la plateforme SlipStream.
+
+%==============================================================================
+\end{spacing}

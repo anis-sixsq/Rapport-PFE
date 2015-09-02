@@ -1,5 +1,5 @@
 \setcounter{mtc}{5} %indique le numéro réel du chapitre, pour la mini table des matières
-\chapter{Plate-formes de gestion des applications cloud}
+\chapter{Contexte Général Et Cadre Du Projet}
 \minitoc  %insert la minitoc
 
 \graphicspath{{Chapitre1/figures/}}
@@ -17,29 +17,191 @@
 %==============================================================================
 
 \section*{Introduction}
-Une étude théorique \cite{YOUSFI2015} peut contenir l'une et/ou l'autre de ces deux parties :
+L'objectif de ce premier chapitre consiste à mettre notre projet dans le contexte général où il évolue. Ainsi à une première étape, nous commençons par présenter l'entreprise d'accueil. Ensuite, nous décrivons brièvement le contexte du projet et la problématique à résoudre. Enfin, nous présentons les méthodologies du travail adoptées et la planification du projet.
 
-\section{État de l'art} 
-C'est une étude assez détaillée sur ce qui existe sur le marché ou dans la littérature (d'où 
-le terme état de l'art), qui permet de répondre à la problématique. L'idée ici est de faire 
-un comparatif entre les solutions existantes, mais surtout d'analyser le résultat de cette 
-comparaison et de dire pourquoi ne sont-elles pas satisfaisantes pour répondre à votre 
-problématique.
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.9]{art.jpg}
-\caption{État de l'art}
+
+
+\section{Présentation de l'entreprise SixSq} 
+\subsection{Présentation générale}
+SixSq est un leader européen dans le Cloud Computing qui fournit des solutions aux entreprises nationales et internationales de toutes tailles. L'entreprise se spécialise dans l'automatisation des processus, apportant des avantages financiers à ces clients via ces produits uniques: SlipStream® et NuvlaBox®. Son équipe, qui se compose d'ingénieurs de logiciels hautement qualifiés, développeurs et administrateurs système de 10 pays différents, est basée à Genève, en Suisse.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.47]{SixSq_logo.png}
+\caption{Logo de l'entreprise SixSq}
 \label{fig:fig1}
 \end{figure}
 
-\section{La plate-forme SlipStream}
-On va présenter la plate-forme SlipStream 
 
-\section{Comparison} 
-On peut faire via un tableau comparatif une comparison entre notre plate-forme 'SlipStream' et les autres plate-formes existent sur le marché.
+\subsection{Partenariats}
+
+SixSq collabore et participe à plusieurs programmes de partenariats. Et voici un résumé de certaines des relations les plus importantes qu'elle a établi :
+
+\begin{description}
+\item[EXOSCALE] SixSq est le partenaire technologique d'Exoscale, le principal fournisseur de services de Cloud suisse.
+
+\item[AMAZON] SixSq est un fournisseur de solutions Amazon, avec un service de SlipStream dédié et configuré pour déployer les applications sur le service EC2.
+
+\item[IBM] SixSq est membre du programme « IBM Partner World ». Elle a certifié SlipStream sur des solutions matérielles et logicielles IBM. 
+
+\item[Helix Nebula] SixSq est un membre fondateur de la collaboration Helix Nebula, qui est un partenariat novateur entre les chercheurs scientifiques et les entreprises en Europe.
+
+\item[RHEA] SixSq forme un partenariat stratégique avec RHEA, le premier fournisseur européen de solutions logicielles pour les domaines : l'aérospatiale, la défense et la sécurité informatique.
+\end{description}
+
+
+
+\subsection{Recherche et Développement}
+SixSq est à la frontière entre le développement innovant et l'exploitation commerciale. SixSq est née d'idées créées au CERN, le centre européen pour la recherche nucléaire. SixSq continue à participer à des projets de recherche et développement, à la fois aux niveaux national et international tel que: H2020, StratusLab, SCISSOR, PAChA, PaaSword, CYCLONE, CELAR.
+
+
+
+\subsection{Clients et Références}
+Ces clients sont de grandes et petites intégrateurs de systèmes, des sociétés de haute technologie, les institutions et les organisations internationales. Elle apprécie des relations transparentes, fondées sur la confiance et l'honnêteté. Parmi ses clients, nous citons :
+
+
+\begin{description}
+
+\item[Atos] est une société internationale de services de technologie de l'information avec chiffre d'affaires 8,5 milliards d'euros en 2011 et 74 000 employeurs dans 42 pays.
+
+\item[Citrix Systems] est une entreprise multinationale américaine fondée en 1989 qui compte plus de 330 000 entreprises clientes dans le monde entier.
+
+\item[L'Union européenne de radio-télévision] est a plus importante association professionnelle de radiodiffuseurs nationaux dans le monde avec 75 membres actifs dans 56 pays.
+
+\item[L'Agence spatiale européenne] (ESA: European Space Agency) est la troisième agence spatiale dans le monde après la NASA et l'agence spatiale fédérale russe.
+
+
+\item[Le Centre Européen des Opérations Spatiales] est chargé du suivi de toutes les sondes spatiales qui sont sous le contrôle total de l'Agence spatiale européenne (ESA).
+
+\item[L'Institut National de Physique Nucléaire] est un institut dédié à l'étude des constituants fondamentaux de la matière.
+
+\item[Interoute] est une entreprise de télécommunications qui possède le plus grand réseau de nouvelle génération couvrant l'Union européenne.
+
+
+\item[Thales Alenia Space] est un leader européen des systèmes satellitaires et une référence mondiale dans les télécommunications, observation radar et optique de la Terre.
+
+\item[Le Centre Européen pour la Recherche Nucléaire (CERN)] est l'un des plus grands et des plus prestigieux laboratoires scientifiques du monde.
+
+\end{description}
+
+
+
+
+\section{Contexte et Problématique} 
+Le Cloud Computing et les Big Data deviennent aujourd'hui une réalité pour la plupart des entreprises. Les professionnels ne se contentent plus de savoir comment stocker les Big Data, mais tentent d'analyser ces données de façon pertinente pour répondre à des besoins métier réels. Alors que le Cloud Computing poursuit son évolution, de plus en plus d'entreprises créent des environnements Cloud efficaces et agiles, tandis que les fournisseurs étoffent leurs offres de services.\\
+
+
+Dans ce contexte, il est donc logique que les DSI considèrent le Cloud Computing comme une structure permettant de soutenir leurs projets de Big Data. Les outils qui traitent les vastes volumes de Big Data aux formats variés requièrent des clusters de serveurs. Les Clouds sont déjà déployés sur des pools de ressources (serveurs, équipements de stockage et réseau) évolutives selon les besoins. Le Cloud Computing offre un moyen rentable pour exploiter les technologies Big Data.\\
+
+
+D'une part, les données sont de plus en plus précieuses. Aujourd'hui, la question n'est plus « quelles données devons-nous stocker ? », mais « que pouvons-nous faire avec ces données ? ». Les entreprises cherchent à libérer toute la valeur potentielle de leurs données afin d'en tirer des avantages concurrentiels. Le volume des données d'entreprise s'est accru de 800 \% entre 2011 et 2015, avec 80 \% de données non structurées (e-mails, documents, vidéos, images, contenus des plateformes de réseaux sociaux, etc.) et 20 \% de données structurées (transactions par carte de crédit, coordonnées, etc.). \\
+
+
+D'autre part, le Cloud Computing devient aujourd'hui une réalité pour de nombreuses entreprises, avec en particulier une forte poussée du déploiement des Clouds privés. La technologie Cloud atteint son niveau de maturité, les obstacles à son adoption étant progressivement éliminés au fil des améliorations en matière de sécurité et d'intégration des données. De leur côté, les entreprises informatiques évoluent et s'adaptent pour prendre en charge les services Cloud. On assiste donc à un renforcement croissant de la confiance des entreprises envers les modèles de distribution Cloud. \\
+
+Les entreprises stockent et traitent de plus en plus de données dans les environnements de Cloud Computing, constituant ce faisant d'immenses et précieuses mines d'informations. Les architectures Cloud constituent en outre pour les utilisateurs métier des ressources évolutives, capables de s'adapter à leurs besoins. L'association entre des serveurs et systèmes de stockage avec des outils de traitement Big Data tels que le logiciel Apache Hadoop fournit la puissance de calcul requise pour analyser de grandes quantités de données de manière efficace et rentable. Mais le déploiement de ce type de logiciel dans un environnement de Cloud Computing représente l'un des plus grands défis pour ses utilisateurs puisqu'il nécessite une longue installation de plusieurs outils sur plusieurs machines virtuelles ainsi qu'une configuration très complexe, ce qui augmente le risque d'erreur.\\
+
+Dans ce contexte, notre mission consiste à réaliser et mettre en place une solution Big Data au sien d'une plateforme multi-cloud afin d'automatiser le déploiement (l'installation et la configuration) d'une distribution Hadoop dans un environnement de Cloud Computing.
+
+
+\section{Méthodologies adoptées} 
+
+
+\subsection{Le processus de développement « Scrum »}
+
+
+\subsubsection{Choix méthodologique}
+
+Le choix du processus de développement est une étape cruciale dans l'élaboration d'un projet. En effet, le processus de développement est constitué d'une succession de phases allant de la spécification des besoins à la réalisation et la livraison du produit.\\
+
+Le choix d'une démarche pour le processus de développement est lié à l'ampleur du projet, à l'équipe qui le prendra en charge ainsi qu'à sa durée et aux moyens mis en oeuvre.\\
+
+Alors, après avoir parcouru les différentes démarches utilisées en gestion de projets et en ayant connaissance de la durée limite'e de notre projet de fin d'
+études, nous avons opté pour suivre La méthodologie « Scrum » d'Agile.
+
+
+\subsubsection{Méthodologie agile}
+
+Une méthodologie agile est une approche itérative et incrèmentale pour le développement de logiciel, réalisée de manière très collaborative par des équipes responsabilisées, en appliquant un cérémonial minimal, qui produisent, dans un délai contraint, un logiciel de grande qualité qui vise à répondre aux besoins changeants des utilisateurs.\\
+
+Le but d'une méthodologie agile est de maximiser la valeur ajoutée. Le développement s'effectuent par itérations successives, il est possible, à la fin de chaque itération, de changer les priorités en faisant en sorte que les éléments apportant le plus de valeur soient réalisés a priori.\\
+
+Les douze principes du manifeste agile sont : 
+\begin{itemize}
+\item Satisfaire le client en livrant tôt et régulièrement des logiciels utiles, qui offrent une véritable valeur ajoutée.
+\item Accepter les changements, même tard dans le développement.
+\item Livrer fréquemment une application qui fonctionne.
+\item Collaborer quotidiennement entre clients et développeurs.
+\item Bâtir le projet autour de personnes motivées en leur fournissant environnement et support, et en leur faisant confiance.
+\item Communiquer par des conversations en face à face.
+\item Mesurer la progression avec le logiciel qui fonctionne.
+\item Garder un rythme de travail durable.
+\item Rechercher l'excellence technique et la qualité de la conception.
+\item Laisser l'équipe s'auto-organiser.
+\item Rechercher la simplicité.
+\item À intervalles réguliers, réfléchir aux moyens de devenir plus efficace.
+\end{itemize}
+
+
+\subsubsection{Méthodologie Scrum}
+
+La méthodologie Scrum est une méthodologie agile dont le nom est un terme emprunté au rugby qui signifie « la mêlée ». Elle s'appuie sur le découpage des projets en itérations encore nommées « sprints ». Un sprint peut avoir une durée qui varie généralement entre deux semaines et un mois.\\
+
+Avant chaque sprint, les tâches sont estimées en temps et en complexité à l'aide de certaines pratiques comme le « planning poker », une manière ludique de chiffrer la complexité des tâches ou évolutions à l'aide de cartes à l'instar du célèbre jeu dont le nom est repris. Ces estimations permettent à la fois de planifier les livraisons, mais aussi d'estimer le coût de ces tâches auprès du client. Les fonctionnalités qui font l'objet d'un sprint constituent ce que l'on appelle un « sprint backlog » du produit éventuellement livrable à la fin du sprint. Il est nécessaire de distinguer le sprint backlog du « product backlog » qui lui correspond à l'ensemble des fonctionnalités attendues pour le produit sur l'ensemble des sprints.\\
+
+La figure \ref{fig:fig2}  présente le tableau de bord du dernier sprint de notre projet. «Waffle.io» est l'outil qui nous fournit ce tableau de bord afin d'appliquer la méthodologie Scrum.\\
+\begin{figure}[H]\centering
+\includegraphics[scale=0.47]{waffle.png}
+\caption{Tableau de bord du dernier sprint}
+\label{fig:fig2}
+\end{figure}
+
+
+
+
+La méthodologie Scrum est aussi caractérisée par une « mêlée » quotidienne, encore appelée « stand-up », dans laquelle les collaborateurs (chefs de projets, développeurs et responsables fonctionnels) indiquent tour à tour les tâches qu'ils ont effectuées la veille, les difficultés rencontrées et enfin ce sur quoi ils vont poursuivre leur travail le jour suivant. Cela permet d'évaluer l'avancement du projet, de mobiliser des ressources là où cela est le plus nécessaire, mais aussi de venir en aide aux collaborateurs rencontrant des difficultés lorsque celles-ci ont déjà été rencontrées auparavant par d'autres membres de l'équipe.\\
+
+La figure \ref{fig:fig3} représente le processus de la réalisation d'un projet en utilisant la méthodologie Scrum.\\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{methode-scrum.jpg}
+\caption{Processus de la méthodologie Scrum}
+\label{fig:fig3}
+\end{figure}
+
+
+La méthodologie Scrum définit trois rôles pour un projet.
+\begin{enumerate}
+\item Le product owner : il s'agit du représentant officiel du client au sein d'un projet Scrum. Il est l'interlocuteur principal du Scrum Master et des membres de l'équipe. Il définit les besoins du produit et rédige les spécifications. Il peut se faire aider de responsables fonctionnels pour la rédaction des spécifications. Il est également chargé de définir et prioriser les users stories pour chaque sprint.
+\item Le scrum master : il s'agit d'une personne chargée de veiller à la mise en application de la méthode et au respect de ses objectifs. Il ne s'agit pas d'un chef de projet, mais d'une personne chargée de lever les obstacles éventuels qui empêcherait l'avancement de l'équipe et du projet pendant les différents sprints.
+\item L'équipe (« team members ») : ce sont les personnes chargées de la réalisation du sprint et d'un produit utilisable en fin de sprint. Il peut s'agir de développeurs, architectes, personnes chargées de faire des tests fonctionnels...
+\end{enumerate}
+
+
+
+
+\subsection{Formalisme de modélisation « UML »}
+Nous utilisons « Unified Modeling Language (UML) » pour la spécification et la conception de ce travail, ce langage est la base de plusieurs méthodes Agile comme les processus unifiés. UML permet de décrire les besoins et documenter les systèmes ainsi que d'esquisser les architectures logicielles. Il s'articule autour de neuf diagrammes dédiés à la présentation d'un concept particulier du système étudié. Toutefois, pour éviter de surcharger le rapport et d'entrer dans certains détails techniques, nous ne présentons que quelques diagrammes que nous jugeons utiles pour comprendre le projet, à savoir les diagrammes des cas d'utilisation et les diagrammes de séquences :
+\begin{itemize}
+\item Les diagrammes de cas d'utilisation: permettent l'énumération des fonctions de l'application du point de vue de l'utilisateur.
+\item Les diagrammes de séquences: permettent une représentation temporelle et comportementale des objets et leurs interactions.
+\end{itemize}
+
+
+
+
+\section{Planification du projet} 
+Le projet s'est déroulé pendant une durée de quatre mois et s'est étendu sur la période entre le 02 Mars 2015 et le 30 juin 2015. La figure \ref{fig:fig4}  illustre le plan suivi, représentant les étapes majeures à franchir afin d'aboutir à une solution fonctionnelle répondant aux critères définis par le cahier des charges.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.9]{gantt-1.png}
+\caption{Planification du projet}
+\label{fig:fig4}
+\end{figure}
 
 
 \section*{Conclusion}
-La conclusion est en général sans numérotation, et n'apparaît pas dans la table des matières.
+Tout au long de ce chapitre, nous avons commencé par la présentation de l'entreprise SixSq, le contexte et la problématique de notre projet. Par suite, nous avons présenté les méthodologies adoptées ainsi que la planification du projet. Dans le chapitre suivant, nous détaillons les différents domaines du travail ainsi que l'état de l'art .
 
 
 %==============================================================================

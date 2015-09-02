@@ -1,0 +1,148 @@
+\setcounter{mtc}{8}
+\chapter{Conception de la solution Big Data au sein de la plateforme SlipStream}
+\minitoc %insert la minitoc
+\graphicspath{{Chapitre4/figures/}}
+
+%\DoPToC
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+
+%==============================================================================
+\section*{Introduction}
+La conception constitue une étape aussi bien délicate que primordiale dans la réalisation d'un projet. Afin de détailler les besoins de notre projet, nous abordons tout au long de ce chapitre la présentation d'une conception claire et bien structurée de la solution Big Data au sien de SlipStream. D'abord, nous nous intéressons à l'architecture multicouches et détaillé de notre solution. Nous détaillons ensuite la conception de notre solution en établissant les vues dynamiques du système, montrant le fonctionnement du système via le diagramme de séquence et le diagramme d'états-transitions.
+
+
+\section{Architectures}
+
+\subsection{Architecture multicouches de la solution}
+En génie logiciel, une application web est une application livrée aux utilisateurs à partir d'un serveur web par un réseau tel que l'Internet ou l'Intranet. Les applications web sont très populaires grâce à l'ubiquité du Navigateur Web comme client, parfois appelé 'client léger'. Une application peut contenir plusieurs couches distinctes. L'exemple typique est une architecture à trois couches composé d'une couche de présentation, couche applicative (aussi appelée couche métier) et enfin une couche d'accès aux données.\\
+
+Dans notre solution, l'architecture à trois couches est composé d'une couche de présentation (L'utilisateur de Hadoop), couche métier (Le service SlipStream) et la couche d'accès aux machines virtuelles (l'Infrastructure Cloud).\\\\
+
+La figure \ref{fig:fig4-1} présente l'architecture multicouches de notre solution.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.45]{Architecture-technique.png}
+\caption{Architecture multicouches de la solution}
+\label{fig:fig4-1}
+\end{figure}
+
+
+L'utilisateur de Hadoop se connecte au service SlipStream à travers un navigateur web. Le navigateur permet d'envoyer des requêtes, essentiellement la requête de déploiement d'un cluster Hadoop, à ce service et d'en interpréter la réponse. Le navigateur et le service SlipStream communiquent en utilisant le protocole http.\\
+
+La fonction du service SlipStream étant de préparer la requête qui sera exécutée au niveau de Cloud. Cette requête contient deux principales parties, la première pour l'instanciation et la contextualisation des VMs du cluster à déployer et la deuxième pour l'exécution des scripts des déploiements. SlipStream possède des connecteurs pour communiquer avec les API des Clouds en utilisant le protocole http.\\
+
+
+L'infrastructure Cloud traite et exécute les requêtes http de SlipStream afin de lancer, configurer et contextualiser les VMs du cluster qui seront utilisées et gérées par l'utilisateur de Hadoop.\\
+
+
+
+
+
+
+
+
+
+\subsection{Architecture détaillée de la solution}
+
+Nous pouvons définir l'architecture multicouches plus détaillée comme une organisation des outils et des VMs qui mettent en oeuvre les fonctions métiers. La figure \ref{fig:fig4-2} présente l'architecture détaillée de notre solution.\\\\
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.54]{Hadoop_Architecture.png}
+\caption{Architecture détaillée de la solution}
+\label{fig:fig4-2}
+\end{figure} 
+
+
+Nous avons présenté dans le deuxième chapitre l'architecture de SlipStream, ce qui nous amène dans cette section à ne détailler que les différents composants déployés par SlipStream au niveau de Cloud.\\
+
+\subsubsection{L'orchestrateur}
+Est une machine virtuelle lancée par SlipStream au niveau de Cloud qui prenne en charge toute l'orchestration des autres VMs du cluster. Cette machine est le responsable pour l'exécution du déploiement. Le service SlipStream lance au premier lieu l'orchestrateur. Ensuite, il lance toutes les VMs du cluster en parallèle. Une fois le déploiement terminé, SlipStream termine cette VM d'orchestration.\\
+
+
+\subsubsection{L'installateur de Hadoop}
+Est une machine virtuelle lancée par SlipStream au niveau de Cloud qui prenne en charge toute l'installation et la configuration du cluster ainsi que l'administration des services de Hadoop après le déploiement. Cette machine contient trois parties indispensables pour réaliser la chaine du déploiement.\\
+
+
+\begin{itemize}
+\item \textbf{BluePrint} : est un fichier JSON créé au niveau de SlipStream qui contient la définition déclarative du cluster Hadoop. Avec BluePrint, nous spécifions la version de Hadoop, les composants et les configurations du cluster. Ce fichier sera envoyé par SlipStream à la machine 'installateur de Hadoop' via une API REST pour donner l'ordre du déploiement à l'Ambari server.\\
+
+\item \textbf{Ambari server} : est la partie serveur du projet Ambari destinée à la supervision et à l'administration d'un cluster Hadoop ainsi que le déploiement des services de Hadoop ou de son écosystème sur des clusters de machines qui contiennent la partie client d'Ambari.\\
+
+\item \textbf {Dnsmasq} : est un serveur DNS qui intégre un serveur DHCP. Dans notre solution, nous avons utilisé seulement le serveur DNS afin d'offrir un service de nommage associé au service d'adressage des machines du cluster. La mise en place d'un serveur DNS dans notre solution est une obligation imposée par le serveur Ambari qui n'accepte pas les adresses IP fournis par les fournisseurs Cloud.\\
+\end{itemize} 
+
+
+
+
+
+
+
+\subsubsection{Le cluster Hadoop}
+
+Est un ensemble des machines 'master' et 'slave' qui contient trois outils nécessaires pour notre solution: un serveur VNC, un client Ambari et un client SlipStream.\\
+
+\begin{itemize}
+\item \textbf{Serveur VNC} : le Virtual Network Computing est un système de visualisation et de contrôle de l'environnement d'un ordinateur distant. Le serveur VNC qui est installé sur la machine master envoie au client VNC toutes les informations nécessaires pour partager à la fois la sortie à l'écran et les entrées de la souris et du clavier. Le client VNC est installé sur la machine de l'utilisateur de Hadoop.\\
+
+\item \textbf{Client Ambari} : est installé sur toutes les machines du cluster afin d'exécuter les requêtes de la partie serveur et de l'envoyer les informations qui concernent les machines et les services de Hadoop.\\
+
+\item \textbf {Client SlipStream} : c'est la partie client de SlipStream qui est installée au début du déploiement sur toutes les machines du cluster afin d'avoir l'environnement nécessaire pour exécuter les requêtes SlipStream.\\
+
+\end{itemize} 
+
+
+
+
+
+
+
+\section{Conception détaillée}
+
+
+
+
+\subsection{Etats du déploiement}
+
+Le déploiement SlipStream est un processus selon lequel une application ou un composant fini est distribué en vue de sa mise en place sur un ou plusieurs VMs. Ce déploiement commence par un état d'initialisation et passe par plusieurs d'autres états pour qu'il arrive à l'état 'Prêt'. La figure \ref{fig:fig4-3} décrit tous ces changements d'états du déploiement.\\
+\begin{figure}[H]\centering
+\includegraphics[scale=0.51]{Diagramme-etats.png}
+\caption{Diagramme d'états-transitions du déploiement}
+\label{fig:fig4-3}
+\end{figure} 
+
+
+Lorsque l'utilisateur clic sur le bouton 'Deploy', le déploiement se déclenche et passe à l'état 'Initializing' dans lequel SlipStream lance l'orchestrateur et attend sa réponse.\\
+
+Une fois la VM d'orchestration réponde, le déploiement passe à l'état 'Provisioning'. Dans cet état l'orchestrateur lance les autres VMs du déploiement qui sont instancier et contextualiser au niveau de Cloud.\\
+
+Lorsque les VMs démarrent, SlipStream exécute les scripts d'installation dans toutes ces VMs et le déploiement prend l'état 'Executing'. Une fois l'exécution de ces scripts terminée, 'Ready' sera le nouvel état du déploiement.\\
+
+Le déploiement reste à l'état 'Ready' jusqu'à l'utilisateur décide de le terminer par un clic sur le bouton 'Terminate'. Dans ce cas-là, SlipStream lance une requête vers le(s) Cloud(s) afin de terminer les VMs et par suite le déploiement passe à l'état 'Terminted'.
+
+
+
+
+\subsection{Chaine complète du déploiement}
+Une fois les architectures de notre solution et de SlipStream accomplis, il convient de détailler le diagramme de séquence objet correspondant à la chaine complète pour déployer et utiliser un cluster Hadoop en mode SaaS. La figure \ref{fig:fig4-4} décrit le déroulement de ce scénario de déploiement.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.56]{Diagramme-sequence.png}
+\caption{Digramme de séquence de déploiement et utilisation d'un cluster Hadoop}
+\label{fig:fig4-4}
+\end{figure} 
+
+
+
+\section*{Conclusion}
+Nous avons présenté dans ce chapitre l'architecture de notre solution ainsi que la chaine complète du déploiement via un diagramme de séquence et un diagramme d'états- transitions. Cette phase de conception nous a permis de décrire, de manière globale et détaillée, le fonctionnement désiré du système afin d'en faciliter la réalisation et la maintenance. Dans le chapitre suivant, nous entamons la phase de réalisation de notre solution.
+
+%==============================================================================
+\end{spacing}

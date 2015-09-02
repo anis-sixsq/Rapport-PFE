@@ -1,10 +1,10 @@
-
-\setcounter{chapter}{3}
-\chapter{Réalisation}
+\setcounter{mtc}{7}
+\chapter{Analyse Et Spécification Des Besoins}
 \minitoc %insert la minitoc
 \graphicspath{{Chapitre3/figures/}}
 
 %\DoPToC
+
 %==============================================================================
 \pagestyle{fancy}
 \fancyhf{}
@@ -16,35 +16,358 @@
 \renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
 
 \begin{spacing}{1.2}
-
 %==============================================================================
-\section*{Introduction}
-Ce chapitre porte sur la partie pratique
+\section*{Introduction} 
+Ce chapitre contient une description complète du comportement du système à développer. Ce dernier présente une analyse et une spécification des différents besoins fonctionnels et non fonctionnels. Nous identifions, dans une première partie, les acteurs du système. Dans une deuxième partie, nous itérons les exigences fonctionnelles et non fonctionnelles. Ensuite, nous analysons les besoins à travers l'élaboration des diagrammes de cas d'utilisation et de séquence système qui décrivent toutes les interactions possibles entre les utilisateurs et la solution en termes de fonctionnalités.
 
-\section{Outils et langages utilisés}
-L'étude technique peut se trouver dans cette partie, comme elle peut être faite en
-parallèle avec l'étude théorique (comme le suggère le modèle 2TUP).
-Dans cette partie, il faut essayer de convaincre le lecteur de vos choix en termes de
-technologie. Un état de l'art est souhaité ici, avec un comparatif, une synthèse et un choix 
-d'outils, même très brefs.
 
-\section{Présentation de l'application}
-Il est tout à fait normal que tout le monde attende cette partie pour coller à souhait toutes les images
-correspondant aux interfaces diverses de l'application si chère à votre coeur, mais
-abstenez vous! Il FAUT mettre des imprime écrans, mais bien choisis, et surtout, il faut les scénariser : Choisissez un scénario d'exécution, par exemple la création d'un 
-nouveau client, et montrer les différentes interfaces nécessaires pour le faire, en
-expliquant brièvement le comportement de l'application. Pas trop d'images, ni trop de
-commentaires : concis, encore et toujours.
 
-Évitez ici de coller du code : personne n'a envie de voir le contenu de vos classes.
-Mais  vous  pouvez insérer des snippets (bouts de code) pour montrer certaines
-fonctionnalités \cite{YOUSFI2015}\cite{Latex}, si vous en avez vraiment besoin. Si vous voulez montrer une partie de votre code, les étapes d'installation ou de configuration, vous pourrez les mettre dans l'annexe.
+
+\section{Identification des acteurs du système}
+Les acteurs évoqués dans le système sont :
+
+\begin{itemize}
+\item  L'utilisateur de Hadoop :
+\begin{itemize}
+\item Est un simple utilisateur qui a un compte SlipStream.
+\item Il doit être un client au moins d'un seul fournisseur Cloud (IaaS).
+\item Il a le droit de déployer notre solution Hadoop dans une infrastructure Cloud.
+\item Il a le droit d'utiliser et gérer la solution Hadoop déployée.
+\item Il a le droit de terminer la solution Hadoop déployée.
+\end{itemize} 
+
+
+\item L'administrateur de la solution Hadoop :
+\begin{itemize}
+\item Est un utilisateur SlipStream qui a le droit d'éditer la solution.
+\item Il a le droit de voir et modifier la configuration des VMs de la solution.
+\item II a le droit de mettre à jour la solution.
+\end{itemize} 
+\end{itemize} 
+
+
+
+
+
+\section{Spécification des besoins}
+La spécification des besoins met en relief les fonctionnalités utiles que doit fournir le système. La solution à réaliser doit satisfaire les besoins fonctionnels et non fonctionnels énumérés dans les deux prochaines sections.
+
+
+
+
+\subsection{Besoins fonctionnels}
+Nous détaillons dans cette partie les principales fonctionnalités, que le système doit fournir aux différents acteurs, qui se présentent comme suit:
+
+\begin{itemize}
+\item  \textbf{Utilisateur de Hadoop} La solution doit permettre aux utilisateurs:
+\begin{itemize}
+\item \textbf{Le déploiement d'un cluster Hadoop} : le système doit permettre aux utilisateurs de déployer, en un seul clic, un cluster Hadoop dans un ou plusieurs Clouds au choix.
+\item \textbf{L'utilisation des machines de Hadoop} : une fois Hadoop déployé, le système doit permettre aux utilisateurs de connecter à la machine «master» en mode SSH ou en mode graphique et utiliser tous les fonctionnalités de Hadoop « 2.x ».
+\item \textbf{La gestion des services de Hadoop} : une fois Hadoop déployé, le système doit permettre aux utilisateurs de gérer les différents services de Hadoop.
+\item \textbf{La gestion du cluster Hadoop} : une fois Hadoop déployé, le système doit permettre aux utilisateurs d'ajouter ou de terminer des machines «slaves» du cluster selon le besoin.
+\item \textbf{La gestion des VMs du cluster} : une fois Hadoop déployé, le système doit permettre aux utilisateurs de gérer les caractéristiques des machines virtuelles utilisées dans le déploiement.
+\end{itemize} 
+
+
+
+\item \textbf{Administrateur de la solution Hadoop}  La solution doit permettre à l'administrateur:
+\begin{itemize}
+\item \textbf{La mise à jour de la solution} : le système doit permettre à l'administrateur de mettre à jour la version de Hadoop et les autres outils utilisés dans la solution.
+\item \textbf{La gestion des machines préconfigurées de Hadoop} : le système doit permettre à l'administrateur de gérer les types d'instances et les images ID des VMs du cluster.
+\item \textbf{La gestion de la sécurité au niveau de Cloud} : le système doit permettre à l'administrateur de gérer le groupe de sécurité.\\
+\end{itemize} 
+\end{itemize} 
+
+
+\textbf{Remarque}:\\
+Dans la suite de ce chapitre, nous ne détaillerons que les cas d'utilisation de l'acteur « Utilisateur de Hadoop » puisque tout le travail à réaliser est lié directement à cet acteur. Pour l'acteur « administrateur », c'est la plateforme SlipStream qui gère tous ces cas d'utilisation.\\
+
+
+
+
+
+\subsection{Besoins non fonctionnels}
+Notre objectif dans ce projet est de développer une solution performante. Etant donné qu'une application uniquement fonctionnelle et opérationnelle ne garantit ni la satisfaction ni la fidélité des utilisateurs, nous devons prendre en considération des critères non fonctionnels lors de la conception et l'implémentation de notre solution. Parmi ces exigences, nous citons:
+
+\begin{itemize}
+\item \textbf{Le temps de déploiement} : la solution doit permettre à l'utilisateur de déployer un cluster Hadoop dans un temps très réduit par rapport un déploiement manuel.
+\item \textbf{L'ergonomie} : pendant le temps de déploiement, la solution doit afficher à l'utilisateur toutes les informations qui concernent l'état de déploiement. Après la fin de déploiement, la solution doit fournir à l'utilisateur toutes les informations nécessaires pour utiliser le cluster Hadoop déployé.
+\item \textbf{La performance des machines} : la solution doit permettre à l'utilisateur de déployer un cluster Hadoop performant qui répond à ses besoins en puissance de calcul.
+\item \textbf{La sécurité} : l'application doit respecter certaines règles relatives à la sécurité des systèmes informatiques. En effet, la solution génère d'une manière aléatoire des mots de passe complexes pour permettre à l'utilisateur de s'authentifier au niveau des VMs et les interfaces d'administration.
+\item \textbf{La maintenance} : les différentes parties de la solution doivent être faciles à maintenir. Par conséquent, le code doit être lisible, bien commenté et bien structuré.
+\end{itemize} 
+
+
+
+
+
+\section{Spécification détaillée des besoins}
+Cette partie a pour objectif de décrire le comportement attendu de l'application pour l'acteur « Utilisateur de Hadoop ». Pour cela nous nous basons sur les diagrammes de cas d'utilisation et de séquence afin de modéliser les différentes fonctionnalités de notre solution.
+
+
+\subsection{Cas d'utilisation de l'acteur « Utilisateur de Hadoop »}
+Les diagrammes de cas d'utilisation permettent de recenser les grandes fonctionnalités de notre système. Ainsi, dans cette partie, nous allons présenter le diagramme des cas d'utilisation pour l'acteur 'utilisateur de Hadoop'. Le diagramme dans la figure \ref{fig:fig3-1} présente ces cas d'utilisation.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.49]{Use-Case.png}
+\caption{Diagramme de cas d'utilisation}
+\label{fig:fig3-1}
+\end{figure}
+
+
+Dans cette partie, chaque cas d'utilisation fera l'objet d'une description détaillée illustrant son but, les différentes possibilités de son déroulement, les conditions nécessaires à sa réalisation, etc.
+
+\subsubsection{Cas d'utilisation 'Déployer un cluster Hadoop'}
+Le but de cas d'utilisation 'Déployer un cluster Hadoop' est le déploiement d'un cluster Hadoop en un seul clic à partir de l'AppStore de SlipStream dans un ou plusieurs Clouds. Ce cas d'utilisation montre que notre solution est une solution multi-cloud. Le tableau Tab \ref{tab:usecase-1}   ci-dessous illustre ce scénario.
+
+\begin{table}[H]
+	\centering
+	\caption{Déroulement du scénario 'Déployer un cluster Hadoop'}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			Titre & \bfseries Utilisateur: déployer un cluster Hadoop\\
+			\hline \hline
+			Intervenant		&	Utilisateur de Hadoop	\\
+			\hline
+			Pré-condition	&	\begin{itemize}\item L'authentification auprès de SlipStream est  effectuée avec succès.\item Le profil de l'utilisateur est bien configuré.\end{itemize}	\\
+			
+			\hline
+			scénarios		&	\begin{enumerate}\item L'utilisateur accède à l'AppStore de SlipStream.\item L'utilisateur clic sur le bouton 'Deploy' de Hadoop.\item Le système affiche une fenêtre des paramètres de déploiement.\item L'utilisateur coche les options de déploiement au choix.\item L'utilisateur choisit le (ou les) Cloud(s) à utiliser.\item L'utilisateur choisit le nombre de VMs du cluster (master et slaves).\item L'utilisateur clic sur le bouton « Run deployment'.\item Le système affiche la page de déploiement.\end{enumerate}	\\
+			\hline
+			Post-condition		&	Le système lance l'automatisation du déploiement et affiche tous ses états (les actions, la progression...).	\\
+			\hline
+			Alternative(s)		&	Paramètres erronés ou manquants.	\\
+			
+			\hline
+	\end{tabularx}
+	\label{tab:usecase-1}
+\end{table}
+
+
+
+
+
+
+
+
+\subsubsection{Cas d'utilisation 'Utiliser les VMs de Hadoop'}
+Le but de cas d'utilisation 'Utiliser les VMs de Hadoop' est la connexion à la machine virtuelle 'Master' en mode SSH (en utilisant l'invite de commandes) ou en mode graphique (en utilisant un client VNC). Une fois l'utilisateur connecté, il utilise son cluster Hadoop. Le tableau Tab \ref{tab:usecase-2}   ci-dessous illustre ce scénario.\\
+
+\begin{table}[H]
+	\centering
+	\caption{Déroulement du scénario 'Utiliser les VMs de Hadoop'}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			Titre & \bfseries Utilisateur: Utiliser les VMs de Hadoop\\
+			\hline \hline
+			Intervenant		&	Utilisateur de Hadoop	\\
+			\hline
+			Pré-condition	&	Le déploiement est effectué avec succès. \\
+			\hline
+			scénarios		&	\begin{itemize}
+			
+			\item L'utilisateur connecte en mode SSH: 
+			\begin{enumerate}
+			\item Le système fournit un lien de connexion SSH à la machine master de Hadoop. 
+			\item L'utilisateur clic sur ce lien et connecte directement à cette machine.
+			\end{enumerate}
+			
+			\item L'utilisateur connecte en mode graphique:
+			\begin{enumerate}
+			\item Le système fournit un login et un mot de passe pour l'authentification auprès de la machine master.
+			\item Le système fournit une interface graphique de la machine master.
+			\item L'utilisateur s'authentifie auprès de cette machine avec le couple (login et mot de passe) fourni.
+			\item L'utilisateur utilise cette machine.
+			\end{enumerate}
+			
+			\end{itemize}	\\
+			\hline
+			Post-condition		&	L'utilisateur profite de tous les services de Hadoop en mode Cloud.	\\
+			\hline
+			Alternative(s)		&	Login ou mot de passe erroné.	\\
+			
+			\hline
+	\end{tabularx}
+	\label{tab:usecase-2}
+\end{table}
+
+
+\newpage
+
+
+
+\subsubsection{Cas d'utilisation 'Gérer les services de Hadoop'}
+Le but de cas d'utilisation 'Gérer les services de Hadoop' est l'administration de tous les services de Hadoop déployés. Une fois le déploiement de Hadoop terminé, notre solution offre une interface graphique en mode SaaS qui permettre à l'utilisateur de gérer, contrôler, visualiser, ajouter, supprimer ... les services de Hadoop. Le tableau Tab \ref{tab:usecase-3} ci-dessous illustre ce scénario.\\
+
+\begin{table}[H]
+	\centering
+	\caption{Déroulement du scénario 'Gérer les services de Hadoop'}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			Titre & \bfseries Utilisateur: Gérer les services de Hadoop\\
+			\hline \hline
+			Intervenant		&	Utilisateur de Hadoop	\\
+			\hline
+			Pré-condition	&	Le déploiement est effectué avec succès.	\\
+			
+			\hline
+			scénarios		&	\begin{enumerate}\item Le système fournit un login et un mot de passe pour l'authentification auprès de l'outil d'administration en mode SaaS.\item Le système fournit le lien pour connecter à cet outil.\item L'utilisateur clic sur ce lien et s'authentifie.\item L'utilisateur connecte à l'interface d'administration.\item L'utilisateur gère et contrôle tous les services.\end{enumerate}	\\
+			\hline
+			Post-condition		&	Le système applique toutes les actions lancer par l'utilisateur à partir de l'interface d'administration.\\
+			\hline
+			Alternative(s)		&	Ports fermés au niveau de fournisseur Cloud (IaaS).	\\
+			
+			\hline
+	\end{tabularx}
+	\label{tab:usecase-3}
+\end{table}
+
+
+
+
+\newpage
+
+
+
+
+
+\subsubsection{Cas d'utilisation 'Gérer le cluster Hadoop'}
+Le but de cas d'utilisation 'Gérer le cluster Hadoop' est de rendre le cluster déployé scalable horizontalement. Selon les besoins des utilisateurs, notre solution offre la possibilité d'ajouter ou de supprimer des VMs « slaves» du cluster. Ce cas d'utilisation montre l'élasticité notre solution ce qui est une caractéristique fondamentale du Cloud Computing. Le tableau Tab \ref{tab:usecase-4} ci-dessous illustre ce scénario.\\
+
+\begin{table}[H]
+	\centering
+	\caption{Déroulement du scénario 'Gérer le cluster Hadoop'}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			Titre & \bfseries Utilisateur: Gérer le cluster Hadoop\\
+			\hline \hline
+			Intervenant		&	Utilisateur de Hadoop	\\
+			\hline
+			Pré-condition	&	\begin{itemize} \item Le déploiement est effectué avec succès. \item SlipStream client est installé sur la machine d'utilisateur. \end{itemize}	\\
+			
+			\hline
+			scénarios		&	\begin{enumerate}\item L'utilisateur exécute les commandes SlipStream spécifiées pour ajouter/terminer des VMs 'slaves' du cluster.\item Le système réaffiche la page de déploiement avec la nouvelle configuration.\item L'utilisateur réutilise son cluster.\end{enumerate}	\\
+			\hline
+			Post-condition		&	Le système déploie/termine ces VMs et reconfigure toutes les VMs du cluster et l'outil d'administration.\\
+			\hline
+			Alternative(s)		&	\begin{itemize} \item Commandes erronées.\item Non-respect du nombre minimal des VMs.\end{itemize}	\\
+			
+			\hline
+	\end{tabularx}
+	\label{tab:usecase-4}
+\end{table}
+
+
+
+
+
+
+\newpage
+
+
+\subsubsection{Cas d'utilisation 'Gérer les VMs du cluster'}
+Le but de cas d'utilisation 'Gérer les VMs du cluster' est de rendre chaque machine virtuelle du cluster scalable verticalement. Selon les besoins des utilisateurs, notre solution offre la possibilité de modifier les caractéristiques des VMs déployées en termes de CPU, RAM et DISC. Ce cas d'utilisation montre un autre type d'élasticité de notre solution. Le tableau Tab \ref{tab:usecase-5} ci-dessous illustre ce scénario.\\
+
+\begin{table}[H]
+	\centering
+	\caption{Déroulement du scénario 'Gérer les VMs du cluster'}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			Titre & \bfseries Utilisateur: Gérer les VMs du cluster \\
+			\hline \hline
+			Intervenant		&	Utilisateur de Hadoop	\\
+			\hline
+			Pré-condition	&	\begin{itemize} \item Le déploiement est effectué avec succès. \item SlipStream client est installé sur la machine d'utilisateur. \end{itemize}	\\
+			
+			\hline
+			scénarios		&	\begin{enumerate}\item L'utilisateur exécute les commandes SlipStream spécifiées pour modifier les caractéristiques des VMs (CPU, RAM et DISC).\item Le système réaffiche la page de déploiement.\item L'utilisateur réutilise son cluster avec la nouvelle configuration des VMs.\end{enumerate}	\\
+			\hline
+			Post-condition		&	Le système modifie les caractéristiques de ces VMs et réinitialise l'outil d'administration.\\
+			\hline
+			Alternative(s)		&	\begin{itemize} \item Commandes erronées.\item Non-respect des limites des ressources.\end{itemize}	\\
+			
+			\hline
+	\end{tabularx}
+	\label{tab:usecase-5}
+\end{table}
+
+
+
+\newpage
+
+
+\subsubsection{Cas d'utilisation 'Terminer un cluster Hadoop'}
+Le but de cas d'utilisation 'Terminer un cluster Hadoop' est de terminer tout un cluster déployé. Une fois l'utilisateur finalisé son travail avec le cluster Hadoop, il peut le terminer en un seul clic à partir de SlipStream. Le tableau Tab \ref{tab:usecase-6} ci-dessous illustre ce scénario.\\
+
+\begin{table}[H]
+	\centering
+	\caption{Déroulement du scénario 'Terminer un cluster Hadoop'}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			Titre & \bfseries Utilisateur: Terminer un cluster Hadoop \\
+			\hline \hline
+			Intervenant		&	Utilisateur de Hadoop	\\
+			\hline
+			Pré-condition	&	\begin{itemize} \item L'authentification auprès de SlipStream est effectuée avec succès.. \item Le déploiement du cluster est effectué. \end{itemize}	\\
+			
+			\hline
+			scénarios		&	\begin{enumerate}\item L'utilisateur accède à la page du déploiement.\item L'utilisateur clic sur le bouton 'Terminate' du déploiement.\item Le système affiche une fenêtre de confirmation.\item L'utilisateur clic sur le bouton 'Terminate'.\item Le système réaffiche la page du déploiement avec l'état 'Terminated'.\end{enumerate}	\\
+			\hline
+			Post-condition		&	Le système lance une requête vers le(s) Cloud(s) pour terminer toutes les VMs du cluster.\\
+			\hline
+			Alternative(s)		&		\\
+			
+			\hline
+	\end{tabularx}
+	\label{tab:usecase-6}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\subsection{Interactions acteur-système}
+Les diagrammes de séquences système sont la représentation graphique des interactions entre les acteurs et le système selon un ordre chronologique dans la formation. Dans ce qui suit nous décrivons les cas d'utilisation 'Déployer un cluster Hadoop' et 'Gérer les services de Hadoop' grâce à des diagrammes de séquence système qui montrent les interactions entre les utilisateurs de Hadoop et le système d'une manière globale.
+
+
+\subsubsection{Cas d'utilisation 'Déployer un cluster Hadoop'}
+Les utilisateurs peuvent déployer un cluster Hadoop à partir de l'AppStore de SlipStream dans un ou plusieurs Clouds. Ce scénario est illustré dans le diagramme de la  figure \ref{fig:fig3-2} .
+\begin{figure}[H]\centering
+\includegraphics[scale=0.64]{Diagramme-deploy.png}
+\caption{Digramme de séquence de déploiement d'un cluster Hadoop}
+\label{fig:fig3-2}
+\end{figure}
+
+
+
+\subsubsection{Cas d'utilisation 'Gérer les services de Hadoop'}
+Une fois le cluster Hadoop déployé, le système affiche un lien pour que les utilisateurs accèdent à l'outil d'administration en mode SaaS et s'authentifient en utilisant le couple (login et mot de passe) fourni par le système. Par suite, ils gèrent et contrôlent tous les services via cet outil. Ce scénario est illustré dans le diagramme de la figure \ref{fig:fig3-3} .
+\begin{figure}[H]\centering
+\includegraphics[scale=0.7]{Diagramme-Gerer.png}
+\caption{Digramme de séquence de gestion des services de Hadoop}
+\label{fig:fig3-3}
+\end{figure}
 
 
  
-
 \section*{Conclusion}
-Voilà.
+Tout au long de ce chapitre, nous avons spécifié et formulé les principales fonctionnalités que le système conçu doit offrir. Par conséquent. Nous répondons, ainsi, à ces besoins dans les étapes suivantes en complétant l'étude par les phases de conception et de mise en oeuvre du système. Le chapitre suivant est consacré à la conception de notre solution Big Data au sein de la plateforme SlipStream.
+
+
+
+
 
 %==============================================================================
 \end{spacing}

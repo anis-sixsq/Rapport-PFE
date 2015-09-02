@@ -319,11 +319,11 @@
 			\setlength{\baselineskip}{4pt}
 			\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\
 			\vspace*{-26pt}
-		 	{\Large\textbf{\begin{spacing}{1}Réalisation et mise en place d'une solution Big Data au sein d'une plate-forme multi-could\end{spacing}}}~\\[\baselineskip]
+		 	{\Large\textbf{\begin{spacing}{1}Réalisation et mise en place d'une solution Big Data au sein d'une plateforme multi-could\end{spacing}}}~\\[\baselineskip]
 	  	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}~\\[\baselineskip]
 	  	
 	Présenté par~\\[\baselineskip]
-	      \baselineskip=20pt
+	      \baselineskip=18.5pt
 	\AUTEURS \\[\baselineskip] 
 			\begin{tabular}{l@{\protect\hspace{0.2cm}}l@{\protect\hspace{0.7cm}}l}
 				Encadrant INSAT & : &\textbf{\ENCADRANT}\\
