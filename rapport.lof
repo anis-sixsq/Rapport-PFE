@@ -1,0 +1,58 @@
+\contentsline {xchapter}{}{vi}{section*.1}
+\contentsline {xchapter}{}{vii}{section*.2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Contexte G\'en\'eral Et Cadre Du Projet}{3}{chapter.1}
+\contentsline {figure}{\numberline {I.1}{\ignorespaces Logo de l'entreprise SixSq\relax }}{4}{figure.caption.4}
+\contentsline {figure}{\numberline {I.2}{\ignorespaces Tableau de bord du dernier sprint\relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {I.3}{\ignorespaces Processus de la m\'ethodologie Scrum\relax }}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {I.4}{\ignorespaces Planification du projet\relax }}{11}{figure.caption.7}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Cloud Computing et Big Data}{13}{chapter.2}
+\contentsline {figure}{\numberline {II.1}{\ignorespaces L'\'ecosyst\`eme de Hadoop\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {II.2}{\ignorespaces Vue d'ensemble d'un cluster Hadoop\relax }}{19}{figure.caption.11}
+\contentsline {figure}{\numberline {II.3}{\ignorespaces Les mod\`eles de services du Cloud Computing\relax }}{22}{figure.caption.12}
+\contentsline {figure}{\numberline {II.4}{\ignorespaces Architecture de SlipStream\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {II.5}{\ignorespaces Clouds support\'es par SlipStream\relax }}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {II.6}{\ignorespaces Tableau de bord de SlipStream\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {II.7}{\ignorespaces AppStore de SlipStream\relax }}{28}{figure.caption.16}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Analyse Et Sp\'ecification Des Besoins}{32}{chapter.3}
+\contentsline {figure}{\numberline {III.1}{\ignorespaces Diagramme de cas d'utilisation\relax }}{35}{figure.caption.21}
+\contentsline {figure}{\numberline {III.2}{\ignorespaces Digramme de s\'equence de d\'eploiement d'un cluster Hadoop\relax }}{42}{figure.caption.28}
+\contentsline {figure}{\numberline {III.3}{\ignorespaces Digramme de s\'equence de gestion des services de Hadoop\relax }}{43}{figure.caption.29}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conception de la solution Big Data au sein de la plateforme SlipStream}{45}{chapter.4}
+\contentsline {figure}{\numberline {IV.1}{\ignorespaces Architecture multicouches de la solution\relax }}{46}{figure.caption.32}
+\contentsline {figure}{\numberline {IV.2}{\ignorespaces Architecture d\'etaill\'ee de la solution\relax }}{47}{figure.caption.33}
+\contentsline {figure}{\numberline {IV.3}{\ignorespaces Diagramme d'\'etats-transitions du d\'eploiement\relax }}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {IV.4}{\ignorespaces Digramme de s\'equence de d\'eploiement et utilisation d'un cluster Hadoop\relax }}{52}{figure.caption.35}
+\addvspace {10\p@ }
+\contentsline {xchapter}{R\'ealisation}{54}{chapter.5}
+\contentsline {figure}{\numberline {V.1}{\ignorespaces D\'eroulement du sc\'enario\relax }}{58}{figure.caption.39}
+\contentsline {figure}{\numberline {V.2}{\ignorespaces Acc\'es \`a l'AppStore de SlipStream\relax }}{59}{figure.caption.40}
+\contentsline {figure}{\numberline {V.3}{\ignorespaces Param\'etrage et lancement d'un d\'eploiement du cluster Hadoop\relax }}{60}{figure.caption.41}
+\contentsline {figure}{\numberline {V.4}{\ignorespaces Page du d\'eploiement en \'etat 'Executing'\relax }}{61}{figure.caption.42}
+\contentsline {figure}{\numberline {V.5}{\ignorespaces Page du d\'eploiement en \'etat 'Ready'\relax }}{62}{figure.caption.43}
+\contentsline {figure}{\numberline {V.6}{\ignorespaces Informations fournis \`a la fin du d\'eploiement\relax }}{62}{figure.caption.44}
+\contentsline {figure}{\numberline {V.7}{\ignorespaces Interface d'authentification d'Ambari\relax }}{63}{figure.caption.45}
+\contentsline {figure}{\numberline {V.8}{\ignorespaces Interface d'administration des services de Hadoop\relax }}{64}{figure.caption.46}
+\contentsline {figure}{\numberline {V.9}{\ignorespaces Interface d'administration des VMs du cluster\relax }}{64}{figure.caption.47}
+\contentsline {figure}{\numberline {V.10}{\ignorespaces Tableau de bord SlipStream apr\`es le d\'eploiement du Hadoop\relax }}{65}{figure.caption.48}
+\contentsline {figure}{\numberline {V.11}{\ignorespaces Premi\`ere phase d'authentification : Adresse\relax }}{66}{figure.caption.49}
+\contentsline {figure}{\numberline {V.12}{\ignorespaces Deuxi\`eme phase d'authentification : Mot de passe\relax }}{66}{figure.caption.50}
+\contentsline {figure}{\numberline {V.13}{\ignorespaces Utilisation de la VM master du cluster Hadoop\relax }}{67}{figure.caption.51}
+\contentsline {figure}{\numberline {V.14}{\ignorespaces Terminaison du cluster Hadoop\relax }}{67}{figure.caption.52}
+\contentsline {figure}{\numberline {V.15}{\ignorespaces Le temps de d\'eploiement d'un cluster Hadoop\relax }}{68}{figure.caption.54}
+\contentsline {figure}{\numberline {V.16}{\ignorespaces Lancement d'un algorithme MapReduce pour estimer le nombre Pi\relax }}{69}{figure.caption.55}
+\contentsline {figure}{\numberline {V.17}{\ignorespaces Fin de l'estimation du nombre Pi\relax }}{70}{figure.caption.56}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusion G\'en\'erale et Perspectives}{72}{chapter*.58}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Annexe}{74}{chapter*.60}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Vue globale d'un d\'eploiement de Hadoop\relax }}{74}{figure.caption.61}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Informations sur la VM 'hadoop installer'\relax }}{75}{figure.caption.62}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Informations sur la VM 'master'\relax }}{76}{figure.caption.63}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Information sur les VMs slaves du cluster\relax }}{77}{figure.caption.64}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Logs du d\'eploiement de Hadoop\relax }}{78}{figure.caption.65}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Section services de l'interface d'administration Ambari\relax }}{79}{figure.caption.66}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Interface d'Ambari pour ajouter les services de Hadoop\relax }}{80}{figure.caption.67}

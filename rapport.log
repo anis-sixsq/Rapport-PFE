@@ -1,0 +1,1518 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2009.4.10)  2 SEP 2015 11:48
+entering extended mode
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**rapport.tex
+(./rapport.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
+omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
+sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+(./Classes/aesm_edspia.cls
+Document Class: Classes/aesm_edspia 
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2008/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2008/09/08 v0.04l Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/eucal.sty
+Package: eucal 2001/10/01 v2.2d Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 55.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2008/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2009/02/02 8.3 (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count89
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/ltxmisc/hypernat.sty
+Package: hypernat 2001/07/09 v1.0b hyperref and natbib compatibility (jb)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2007/12/12 v1.6 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count90
+\calc@Bcount=\count91
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count92
+\calc@Cskip=\skip56
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count93
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/02/22 v6.78p Hypertext links for LaTeX
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2008/09/08 v1.4 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2008/09/08 xcolor patch
+))
+\@linkdim=\dimen107
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/02/22 v6.78p Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/local/texlive/2008/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2007/10/18 v3.0 Keyval support for LaTeX options (HO)
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 2824.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 2824.
+Package hyperref Info: Option `bookmarks' set `true' on input line 2824.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 2824.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 2824
+.
+Package hyperref Info: Option `breaklinks' set `true' on input line 2824.
+Package hyperref Info: Option `linktocpage' set `true' on input line 2824.
+Package hyperref Info: Option `colorlinks' set `true' on input line 2824.
+Package hyperref Info: Option `hyperindex' set `true' on input line 2824.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 2824.
+Package hyperref Info: Option `hyperfigures' set `true' on input line 2824.
+Package hyperref Info: Hyper figures ON on input line 2933.
+Package hyperref Info: Link nesting OFF on input line 2940.
+Package hyperref Info: Hyper index ON on input line 2943.
+Package hyperref Info: Plain pages OFF on input line 2950.
+Package hyperref Info: Backreferencing ON on input line 2953.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3145.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2006/09/05 v1.28 Bibliographical back referencing
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3382.
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2007/12/12 v0.3 LuaTeX support for pdfTeX utility functions
+ (HO)
+Package pdftexcmds Info: LuaTeX not detected on input line 139.
+)))
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2007/09/29 v1.3 Key value parser with default handler suppor
+t (HO)
+)
+\Fld@menulength=\count96
+\Field@Width=\dimen108
+\Fld@charsize=\dimen109
+\Field@toks=\toks18
+Package hyperref Info: Hyper figures ON on input line 4297.
+Package hyperref Info: Link nesting OFF on input line 4304.
+Package hyperref Info: Hyper index ON on input line 4307.
+Package hyperref Info: backreferencing ON on input line 4312.
+Package hyperref Info: Link coloring ON on input line 4317.
+Package hyperref Info: Link coloring with OCG OFF on input line 4324.
+Package hyperref Info: PDF/A mode OFF on input line 4329.
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count97
+\c@Item=\count98
+)
+*hyperref using driver hpdftex*
+(/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/02/22 v6.78p Hyperref driver for pdfTeX
+\Fld@listcount=\count99
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2008/07/16 v60 Package minitoc (JPFD)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 60 ***.
+\tf@mtc=\write3
+\mtcindent=\skip57
+\mtcskipamount=\skip58
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks19
+\mtc@strutbox=\box28
+\mtc@hstrutbox=\box29
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout3 = `rapport.mtc0'.
+
+\openout3 = `rapport.mtc'.
+
+
+(./rapport.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout3 = `rapport.mtc'.
+
+\openout3 = `rapport.mtc0'.
+
+\c@mtc=\count100
+\c@minitocdepth=\count101
+\c@ptc=\count102
+\c@parttocdepth=\count103
+\ptcindent=\skip59
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4910.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2006/05/05 v1.1b Input encoding file
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks22
+\ex@=\dimen110
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen111
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count104
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count105
+\leftroot@=\count106
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count107
+\DOTSCASE@=\count108
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen112
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
+\dotsspace@=\muskip11
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
+\tag@help=\toks23
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
+\andhelp@=\toks24
+\eqnshift@=\dimen113
+\alignsep@=\dimen114
+\tagshift@=\dimen115
+\tagwidth@=\dimen116
+\totwidth@=\dimen117
+\lineht@=\dimen118
+\@envbody=\toks25
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2007/01/14 v1.3 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 13.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 14.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 16.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 17.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 18.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 19.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 24.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 25.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 28.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 29.
+)
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 10.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
+\c@DefaultLines=\count116
+\DefaultFindent=\dimen119
+\DefaultNindent=\dimen120
+\DefaultSlope=\dimen121
+\L@lbox=\box32
+\L@tbox=\box33
+\c@L@lines=\count117
+\L@Pindent=\dimen122
+\L@Findent=\dimen123
+\L@Nindent=\dimen124
+\L@lraise=\dimen125
+\L@first=\dimen126
+\L@next=\dimen127
+\L@slope=\dimen128
+\L@height=\dimen129
+\LettrineWidth=\dimen130
+
+Loading lettrine.cfg
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tools/array.sty
+Package: array 2005/08/23 v2.4b Tabular extension package (FMi)
+\col@sep=\dimen131
+\extrarowheight=\dimen132
+\NC@list=\toks27
+\extratabsurround=\skip63
+\backup@length=\skip64
+)
+\TX@col@width=\dimen133
+\TX@old@table=\dimen134
+\TX@old@col=\dimen135
+\TX@target=\dimen136
+\TX@delta=\dimen137
+\TX@cols=\count118
+\TX@ftn=\toks28
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen138
+\epsfysize=\dimen139
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/moreverb/moreverb.sty
+Package: moreverb 2008/06/03 v2.3 `more' verbatim facilities
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
+\verbatim@in@stream=\read1
+)
+\verbatim@out=\write4
+\tab@position=\count119
+\tab@size=\count120
+\listing@line=\count121
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/ltxmisc/cases.sty
+Package: cases 2002/05/02 ver 2.5 
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen140
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xy.sty
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
+catcodes, docmode,
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.7 <1999/02/16>
+ Copyright (c) 1991-1998 by Kristoffer H. Rose <krisrose@ens-lyon.fr>
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen141
+\Y@c=\dimen142
+\U@c=\dimen143
+\D@c=\dimen144
+\L@c=\dimen145
+\R@c=\dimen146
+\Edge@c=\toks31
+\X@p=\dimen147
+\Y@p=\dimen148
+\U@p=\dimen149
+\D@p=\dimen150
+\L@p=\dimen151
+\R@p=\dimen152
+\Edge@p=\toks32
+\X@origin=\dimen153
+\Y@origin=\dimen154
+\X@xbase=\dimen155
+\Y@xbase=\dimen156
+\X@ybase=\dimen157
+\Y@ybase=\dimen158
+\X@min=\dimen159
+\Y@min=\dimen160
+\X@max=\dimen161
+\Y@max=\dimen162
+\lastobjectbox@=\box34
+\zerodotbox@=\box35
+\almostz@=\dimen163
+ direction,
+\d@X=\dimen164
+\d@Y=\dimen165
+\K@=\count122
+\KK@=\count123
+\Direction=\count124
+\K@dXdY=\dimen166
+\K@dYdX=\dimen167
+\xyread@=\read2
+\xywrite@=\write5
+\csp@=\count125
+\quotPTK@=\dimen168
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks33
+\connectobjectbox@@=\box36
+ objects,
+\styletoks@=\toks34
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 1999/02/16 Xy-pic version 3.7
+
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.3
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.7 curve,
+\crv@cnt@=\count126
+\crvpts@=\toks35
+\splinebox@=\box37
+\splineval@=\dimen169
+\splinedepth@=\dimen170
+\splinetol@=\dimen171
+\splinelength@=\dimen172
+ circles,
+\L@=\dimen173
+ loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.7 loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.3
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.3 loaded) loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.6
+\xylinethick@=\dimen174
+ loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.3 loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.3 loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.4
+\Row=\count127
+\Col=\count128
+\queue@=\toks36
+\queue@@=\toks37
+\qcount@=\count129
+\qcount@@=\count130
+\matrixsize@=\count131
+ loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.5 path, \ar, loaded)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.7 loaded) loaded))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box38
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (./Classes/eurosans.sty
+
+LaTeX Warning: You have requested package `Classes/eurosans',
+               but the package provides `eurosans'.
+
+Package: eurosans 2004/01/26 v3.1 using the Adobe Euro fonts (WaS)
+LaTeX Info: Redefining \euro on input line 62.
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/eepic/epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count132
+\d@lta=\count133
+\@delta=\dimen175
+\@@delta=\dimen176
+\@gridcnt=\count134
+\@joinkind=\count135
+\@dotgap=\dimen177
+\@ddotgap=\dimen178
+\@x@diff=\count136
+\@y@diff=\count137
+\x@diff=\dimen179
+\y@diff=\dimen180
+\@dotbox=\box39
+\num@segments=\count138
+\num@segmentsi=\count139
+\@datafile=\read3
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/eepic/eepic.sty
+Extension to Epic and LaTeX. Version 1.1e - Released Dec 21, 1999
+\@gphlinewidth=\count140
+\@eepictcnt=\count141
+\@tempdimc=\dimen181
+\maxovaldiam=\dimen182
+\@filltype=\box40
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks38
+\SOUL@lasttoken=\toks39
+\SOUL@cmds=\toks40
+\SOUL@buffer=\toks41
+\SOUL@token=\toks42
+\SOUL@spaceskip=\skip65
+\SOUL@ttwidth=\dimen183
+\SOUL@uldp=\dimen184
+\SOUL@ulht=\dimen185
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2003/03/13 v1.5g extra ToC listings
+
+
+Package tocbibind Note: The document has chapter divisions.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2000/09/19 1.3
+
+Style option: `fancybox' v1.3 <2000/09/19> (tvz)
+\@fancybox=\box41
+\shadowsize=\dimen186
+\@Sbox=\box42
+\do@VerbBox=\toks43
+\the@fancyput=\toks44
+\this@fancyput=\toks45
+\EndVerbatimTokens=\toks46
+\Verbatim@Outfile=\write6
+\Verbatim@Infile=\read4
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+\SC@BOXWD=\dimen187
+\SC@CAPWD=\dimen188
+\SC@tempdima=\dimen189
+\SC@tempdimb=\dimen190
+\c@SC@C=\count142
+\SC@BOX=\box43
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2008/08/24 v3.1j Customizing captions (AR)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2008/08/24 v3.1j caption3 kernel (AR)
+\captionmargin=\dimen191
+\captionmargin@=\dimen192
+\captionwidth=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
+)
+\c@ContinuedFloat=\count143
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: sidecap package is loaded.
+)
+(./Classes/fncychap.sty
+
+LaTeX Warning: You have requested package `Classes/fncychap',
+               but the package provides `fncychap'.
+
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip66
+\mylen=\skip67
+\myhi=\skip68
+\px=\skip69
+\py=\skip70
+\pyy=\skip71
+\pxx=\skip72
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count144
+\sf@farskip=\skip73
+\sf@captopadj=\dimen197
+\sf@capskip=\skip74
+\sf@nearskip=\skip75
+\c@subfigure=\count145
+\c@subfigure@save=\count146
+\c@lofdepth=\count147
+\c@subtable=\count148
+\c@subtable@save=\count149
+\c@lotdepth=\count150
+\sf@top=\skip76
+\sf@bottom=\skip77
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count151
+\lst@gtempboxa=\box44
+\lst@token=\toks47
+\lst@length=\count152
+\lst@currlwidth=\dimen198
+\lst@column=\count153
+\lst@pos=\count154
+\lst@lostspace=\dimen199
+\lst@width=\dimen200
+\lst@newlines=\count155
+\lst@lineno=\count156
+\lst@maxwidth=\dimen201
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count157
+\lst@skipnumbers=\count158
+\lst@framebox=\box45
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(./rapport.aux (./Remerciement/remerciement.aux) (./Resumes/resumeF.aux)
+(./Resumes/resumeA.aux) (./Introduction/introduction.aux)
+(./Chapitre1/chapitre1.aux) (./Chapitre2/chapitre2.aux
+
+LaTeX Warning: Label `fig:fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig2' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig3' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig4' multiply defined.
+
+) (./Chapitre3/chapitre3.aux) (./Chapitre4/chapitre4.aux)
+(./Chapitre5/chapitre5.aux) (./Conclusion/conclusion.aux)
+(./Annexe1/annexe1.aux
+
+LaTeX Warning: Label `fig:fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig2' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig3' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig4' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig5' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig6' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig7' multiply defined.
+
+))
+\openout1 = `rapport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 90.
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 90.
+
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count159
+\scratchdimen=\dimen202
+\scratchbox=\box46
+\nofMPsegments=\count160
+\nofMParguments=\count161
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count162
+\MPscratchDim=\dimen203
+\MPnumerator=\count163
+\everyMPtoPDFconversion=\toks49
+)
+Package hyperref Info: Link coloring ON on input line 90.
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count164
+)
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+
+(./rapport.out) (./rapport.out)
+\@outlinefile=\write7
+\openout7 = `rapport.out'.
+
+Package backref Info: ** backref set up for natbib ** on input line 90.
+\AtBeginShipoutBox=\box47
+\c@minilofdepth=\count165
+\c@minilotdepth=\count166
+\c@partlofdepth=\count167
+\c@partlotdepth=\count168
+\c@sectlofdepth=\count169
+\c@sectlotdepth=\count170
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0046
+(minitoc(hints))             --- The tocbibind package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+
+
+Package minitoc(hints) Warning: W0030
+(minitoc(hints))                --- The \part command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+
+Package minitoc(hints) Warning: W0028
+(minitoc(hints))                --- The \chapter command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
+LaTeX Info: Redefining \selectfont on input line 125.
+)
+\CenteringLeftskip=\skip78
+\RaggedLeftLeftskip=\skip79
+\RaggedRightLeftskip=\skip80
+\CenteringRightskip=\skip81
+\RaggedLeftRightskip=\skip82
+\RaggedRightRightskip=\skip83
+\CenteringParfillskip=\skip84
+\RaggedLeftParfillskip=\skip85
+\RaggedRightParfillskip=\skip86
+\JustifyingParfillskip=\skip87
+\CenteringParindent=\skip88
+\RaggedLeftParindent=\skip89
+\RaggedRightParindent=\skip90
+\JustifyingParindent=\skip91
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 90.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count171
+
+<insat.jpg, id=303, 1027.84pt x 360.34625pt>
+File: insat.jpg Graphic file (type jpg)
+ <use insat.jpg>
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 118.
+
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 118.
+
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 118
+.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 118
+.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2007/01/14 v1.3 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 118.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 118.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 118.
+LaTeX Font Info:    Try loading font information for U+msa on input line 118.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 118.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+) [0
+
+{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./insat
+.jpg>]
+[-2]
+\openout2 = `Remerciement/remerciement.aux'.
+
+ (./Remerciement/remerciement.tex) [1
+
+
+
+]
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM rapport.toc on input line 151.
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc1.
+\openout3 = `rapport.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc2.
+\openout3 = `rapport.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc3.
+\openout3 = `rapport.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc4.
+\openout3 = `rapport.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc5.
+\openout3 = `rapport.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc6.
+\openout3 = `rapport.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc7.
+\openout3 = `rapport.mtc7'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc8.
+\openout3 = `rapport.mtc8'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc9.
+\openout3 = `rapport.mtc9'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc10.
+\openout3 = `rapport.mtc10'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc11.
+\openout3 = `rapport.mtc11'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc12.
+\openout3 = `rapport.mtc12'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc13.
+\openout3 = `rapport.mtc13'.
+
+ (./rapport.toc [2
+
+
+] [3])
+\tf@toc=\write8
+\openout8 = `rapport.toc'.
+
+ [4]
+(./rapport.lof [5
+
+])
+\tf@lof=\write9
+\openout9 = `rapport.lof'.
+
+ [6] (./rapport.lot)
+\tf@lot=\write10
+\openout10 = `rapport.lot'.
+
+ [7
+
+]
+\openout2 = `Resumes/resumeF.aux'.
+
+ (./Resumes/resumeF.tex) [8
+
+
+]
+\openout2 = `Resumes/resumeA.aux'.
+
+
+(./Resumes/resumeA.tex) [9
+
+
+
+]
+\openout2 = `Introduction/introduction.aux'.
+
+ (./Introduction/introduction.tex [1
+
+
+
+
+]) [2]
+\openout2 = `Chapitre1/chapitre1.aux'.
+
+
+(./Chapitre1/chapitre1.tex
+Chapter I.
+\openout3 = `rapport.mtc'.
+
+\openout3 = `rapport.mtc'.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 4.
+(./rapport.mtc6)
+
+Package natbib Warning: Citation `sixsq' on page 3 undefined on input line 26.
+
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 26.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
+) [3
+
+
+
+]
+<Chapitre1/figures/SixSq_logo.png, id=560, 203.25937pt x 203.25937pt>
+File: Chapitre1/figures/SixSq_logo.png Graphic file (type png)
+
+<use Chapitre1/figures/SixSq_logo.png> [4 <./Chapitre1/figures/SixSq_logo.png>]
+[5] [6] [7] <Chapitre1/figures/waffle.png, id=583, 1023.825pt x 503.63156pt>
+File: Chapitre1/figures/waffle.png Graphic file (type png)
+
+<use Chapitre1/figures/waffle.png> [8]
+<Chapitre1/figures/methode-scrum.jpg, id=591, 451.6875pt x 326.72063pt>
+File: Chapitre1/figures/methode-scrum.jpg Graphic file (type jpg)
+
+<use Chapitre1/figures/methode-scrum.jpg> [9 <./Chapitre1/figures/waffle.png>]
+[10 <./Chapitre1/figures/methode-scrum.jpg>]
+<Chapitre1/figures/gantt-1.png, id=605, 484.81125pt x 319.94531pt>
+File: Chapitre1/figures/gantt-1.png Graphic file (type png)
+
+<use Chapitre1/figures/gantt-1.png> [11 <./Chapitre1/figures/gantt-1.png>])
+[12]
+\openout2 = `Chapitre2/chapitre2.aux'.
+
+ (./Chapitre2/chapitre2.tex
+Chapter II.
+\openout3 = `rapport.mtc'.
+
+\openout3 = `rapport.mtc'.
+
+(./rapport.mtc7) [13
+
+
+
+] [14] [15]
+<Chapitre2/figures/hadoop-ecosystem.png, id=655, 677.53125pt x 492.33937pt>
+File: Chapitre2/figures/hadoop-ecosystem.png Graphic file (type png)
+
+<use Chapitre2/figures/hadoop-ecosystem.png> [16] [17 <./Chapitre2/figures/hado
+op-ecosystem.png>]
+<Chapitre2/figures/Cluster-Hadoop.png, id=666, 481.04718pt x 256.70906pt>
+File: Chapitre2/figures/Cluster-Hadoop.png Graphic file (type png)
+
+<use Chapitre2/figures/Cluster-Hadoop.png> [18] [19 <./Chapitre2/figures/Cluste
+r-Hadoop.png>] [20]
+<Chapitre2/figures/cloud.jpg, id=682, 772.38562pt x 450.18187pt>
+File: Chapitre2/figures/cloud.jpg Graphic file (type jpg)
+
+<use Chapitre2/figures/cloud.jpg> [21] [22 <./Chapitre2/figures/cloud.jpg>]
+[23] [24] <Chapitre2/figures/SlipStream.png, id=700, 764.8575pt x 786.94pt>
+File: Chapitre2/figures/SlipStream.png Graphic file (type png)
+
+<use Chapitre2/figures/SlipStream.png> [25 <./Chapitre2/figures/SlipStream.png>
+] <Chapitre2/figures/slipstream_cloud.png, id=707, 397.0879pt x 216.01582pt>
+File: Chapitre2/figures/slipstream_cloud.png Graphic file (type png)
+
+<use Chapitre2/figures/slipstream_cloud.png>
+<Chapitre2/figures/dashbord.png, id=709, 779.91376pt x 688.82344pt>
+File: Chapitre2/figures/dashbord.png Graphic file (type png)
+
+<use Chapitre2/figures/dashbord.png> [26 <./Chapitre2/figures/slipstream_cloud.
+png>] <Chapitre2/figures/AppStore.png, id=717, 644.4075pt x 509.65407pt>
+File: Chapitre2/figures/AppStore.png Graphic file (type png)
+
+<use Chapitre2/figures/AppStore.png> [27 <./Chapitre2/figures/dashbord.png>]
+[28 <./Chapitre2/figures/AppStore.png>] [29] [30]) [31]
+\openout2 = `Chapitre3/chapitre3.aux'.
+
+
+(./Chapitre3/chapitre3.tex
+Chapter III.
+\openout3 = `rapport.mtc'.
+
+\openout3 = `rapport.mtc'.
+
+(./rapport.mtc8) [32
+
+
+
+] [33] [34]
+<Chapitre3/figures/Use-Case.png, id=765, 899.36pt x 726.715pt>
+File: Chapitre3/figures/Use-Case.png Graphic file (type png)
+
+<use Chapitre3/figures/Use-Case.png> [35 <./Chapitre3/figures/Use-Case.png>]
+[36] [37] [38] [39] [40] [41]
+<Chapitre3/figures/Diagramme-deploy.png, id=840, 476.78125pt x 630.355pt>
+File: Chapitre3/figures/Diagramme-deploy.png Graphic file (type png)
+
+<use Chapitre3/figures/Diagramme-deploy.png>
+<Chapitre3/figures/Diagramme-Gerer.png, id=842, 498.86375pt x 630.355pt>
+File: Chapitre3/figures/Diagramme-Gerer.png Graphic file (type png)
+
+<use Chapitre3/figures/Diagramme-Gerer.png> [42 <./Chapitre3/figures/Diagramme-
+deploy.png>] [43 <./Chapitre3/figures/Diagramme-Gerer.png>]) [44]
+\openout2 = `Chapitre4/chapitre4.aux'.
+
+
+(./Chapitre4/chapitre4.tex
+Chapter IV.
+\openout3 = `rapport.mtc'.
+
+\openout3 = `rapport.mtc'.
+
+(./rapport.mtc9) [45
+
+
+
+]
+<Chapitre4/figures/Architecture-technique.png, id=873, 1053.9375pt x 243.91125p
+t>
+File: Chapitre4/figures/Architecture-technique.png Graphic file (type png)
+ <use Chapitre4/figures/Architecture-technique.png> [46 <./Chapitre4/figures/Ar
+chitecture-technique.png>]
+<Chapitre4/figures/Hadoop_Architecture.png, id=880, 907.39pt x 644.4075pt>
+File: Chapitre4/figures/Hadoop_Architecture.png Graphic file (type png)
+
+<use Chapitre4/figures/Hadoop_Architecture.png>
+Overfull \hbox (6.28647pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+[47 <./Chapitre4/figures/Hadoop_Architecture.png>] [48]
+<Chapitre4/figures/Diagramme-etats.png, id=893, 270.00874pt x 677.53125pt>
+File: Chapitre4/figures/Diagramme-etats.png Graphic file (type png)
+
+<use Chapitre4/figures/Diagramme-etats.png> [49]
+<Chapitre4/figures/Diagramme-sequence.png, id=900, 807.015pt x 1160.335pt>
+File: Chapitre4/figures/Diagramme-sequence.png Graphic file (type png)
+
+<use Chapitre4/figures/Diagramme-sequence.png> [50 <./Chapitre4/figures/Diagram
+me-etats.png>] [51]
+Overfull \vbox (45.82256pt too high) has occurred while \output is active []
+
+
+[52 <./Chapitre4/figures/Diagramme-sequence.png>]) [53]
+\openout2 = `Chapitre5/chapitre5.aux'.
+
+
+(./Chapitre5/chapitre5.tex
+Chapter V.
+\openout3 = `rapport.mtc'.
+
+\openout3 = `rapport.mtc'.
+
+(./rapport.mtc10) [54
+
+
+
+] [55] [56]
+<Chapitre5/figures/scenario-demo.png, id=949, 443.6575pt x 416.55624pt>
+File: Chapitre5/figures/scenario-demo.png Graphic file (type png)
+
+<use Chapitre5/figures/scenario-demo.png> [57] [58 <./Chapitre5/figures/scenari
+o-demo.png>] <Chapitre5/figures/0.png, id=962, 456.95718pt x 520.94624pt>
+File: Chapitre5/figures/0.png Graphic file (type png)
+
+<use Chapitre5/figures/0.png>
+<Chapitre5/figures/1.png, id=963, 474.27188pt x 611.28375pt>
+File: Chapitre5/figures/1.png Graphic file (type png)
+
+<use Chapitre5/figures/1.png> [59 <./Chapitre5/figures/0.png>] [60 <./Chapitre5
+/figures/1.png>] <Chapitre5/figures/2.png, id=975, 682.80093pt x 508.14844pt>
+File: Chapitre5/figures/2.png Graphic file (type png)
+
+<use Chapitre5/figures/2.png> [61 <./Chapitre5/figures/2.png>]
+<Chapitre5/figures/3.png, id=983, 665.48625pt x 551.05875pt>
+File: Chapitre5/figures/3.png Graphic file (type png)
+
+<use Chapitre5/figures/3.png>
+<Chapitre5/figures/4.png, id=984, 434.37282pt x 247.67531pt>
+File: Chapitre5/figures/4.png Graphic file (type png)
+
+<use Chapitre5/figures/4.png>
+<Chapitre5/figures/5.png, id=986, 587.94656pt x 325.215pt>
+File: Chapitre5/figures/5.png Graphic file (type png)
+
+<use Chapitre5/figures/5.png> [62 <./Chapitre5/figures/3.png> <./Chapitre5/figu
+res/4.png>] [63 <./Chapitre5/figures/5.png>]
+<Chapitre5/figures/6.png, id=1000, 911.65594pt x 529.22719pt>
+File: Chapitre5/figures/6.png Graphic file (type png)
+
+<use Chapitre5/figures/6.png>
+<Chapitre5/figures/6+.png, id=1002, 892.83563pt x 381.67593pt>
+File: Chapitre5/figures/6+.png Graphic file (type png)
+
+<use Chapitre5/figures/6+.png> [64 <./Chapitre5/figures/6.png> <./Chapitre5/fig
+ures/6+.png>] <Chapitre5/figures/7.png, id=1010, 674.52pt x 789.70032pt>
+File: Chapitre5/figures/7.png Graphic file (type png)
+
+<use Chapitre5/figures/7.png>
+<Chapitre5/figures/8.png, id=1013, 859.71187pt x 547.2947pt>
+File: Chapitre5/figures/8.png Graphic file (type png)
+
+<use Chapitre5/figures/8.png> [65 <./Chapitre5/figures/7.png>]
+<Chapitre5/figures/9.png, id=1019, 860.46469pt x 540.51938pt>
+File: Chapitre5/figures/9.png Graphic file (type png)
+
+<use Chapitre5/figures/9.png>
+<Chapitre5/figures/10.png, id=1021, 677.53125pt x 481.8pt>
+File: Chapitre5/figures/10.png Graphic file (type png)
+
+<use Chapitre5/figures/10.png> [66 <./Chapitre5/figures/8.png> <./Chapitre5/fig
+ures/9.png>] <Chapitre5/figures/11+.png, id=1029, 959.585pt x 191.71625pt>
+File: Chapitre5/figures/11+.png Graphic file (type png)
+
+<use Chapitre5/figures/11+.png> [67 <./Chapitre5/figures/10.png> <./Chapitre5/f
+igures/11+.png>]
+<Chapitre5/figures/12.png, id=1038, 665.48625pt x 172.39406pt>
+File: Chapitre5/figures/12.png Graphic file (type png)
+
+<use Chapitre5/figures/12.png> [68 <./Chapitre5/figures/12.png>]
+<Chapitre5/figures/13-calcul-pi-1.png, id=1047, 649.67719pt x 611.28375pt>
+File: Chapitre5/figures/13-calcul-pi-1.png Graphic file (type png)
+
+<use Chapitre5/figures/13-calcul-pi-1.png>
+<Chapitre5/figures/14-calcul-pi-2.png, id=1048, 651.93562pt x 612.78937pt>
+File: Chapitre5/figures/14-calcul-pi-2.png Graphic file (type png)
+
+<use Chapitre5/figures/14-calcul-pi-2.png> [69 <./Chapitre5/figures/13-calcul-p
+i-1.png>] [70 <./Chapitre5/figures/14-calcul-pi-2.png>]) [71]
+\openout2 = `Conclusion/conclusion.aux'.
+
+
+(./Conclusion/conclusion.tex) [72
+
+
+
+
+] (./rapport.bbl (./rapport.brf)
+\tf@brf=\write11
+\openout11 = `rapport.brf'.
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 13.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)) [73
+
+
+]
+\openout2 = `Annexe1/annexe1.aux'.
+
+
+(./Annexe1/annexe1.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 10.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 12.
+
+<Annexe1/figures/1-overview.png, id=1080, 738.50906pt x 517.935pt>
+File: Annexe1/figures/1-overview.png Graphic file (type png)
+
+<use Annexe1/figures/1-overview.png> [74
+
+
+ <./Annexe1/figures/1-overview.png>]
+<Annexe1/figures/2-hadoop-installer.png, id=1088, 859.71187pt x 992.95969pt>
+File: Annexe1/figures/2-hadoop-installer.png Graphic file (type png)
+
+<use Annexe1/figures/2-hadoop-installer.png>
+Overfull \hbox (2.04128pt too wide) in paragraph at lines 43--44
+ [][] 
+ []
+
+<Annexe1/figures/3-master.png, id=1090, 870.25125pt x 810.02625pt>
+File: Annexe1/figures/3-master.png Graphic file (type png)
+
+<use Annexe1/figures/3-master.png>
+Overfull \hbox (3.64055pt too wide) in paragraph at lines 50--51
+ [][] 
+ []
+
+[75 <./Annexe1/figures/2-hadoop-installer.png>] [76 <./Annexe1/figures/3-master
+.png>] <Annexe1/figures/4-slave.png, id=1102, 866.48718pt x 496.85625pt>
+File: Annexe1/figures/4-slave.png Graphic file (type png)
+
+<use Annexe1/figures/4-slave.png>
+Overfull \hbox (10.20598pt too wide) in paragraph at lines 58--59
+ [][] 
+ []
+
+[77 <./Annexe1/figures/4-slave.png>]
+<Annexe1/figures/5-log.png, id=1109, 859.71187pt x 496.85625pt>
+File: Annexe1/figures/5-log.png Graphic file (type png)
+
+<use Annexe1/figures/5-log.png>
+Overfull \hbox (6.34401pt too wide) in paragraph at lines 67--68
+ [][] 
+ []
+
+[78 <./Annexe1/figures/5-log.png>]
+<Annexe1/figures/6-ambari.png, id=1116, 947.03813pt x 611.28375pt>
+File: Annexe1/figures/6-ambari.png Graphic file (type png)
+
+<use Annexe1/figures/6-ambari.png> [79 <./Annexe1/figures/6-ambari.png>]
+<Annexe1/figures/7-services.png, id=1123, 896.59969pt x 998.9822pt>
+File: Annexe1/figures/7-services.png Graphic file (type png)
+
+<use Annexe1/figures/7-services.png>
+Overfull \hbox (9.43452pt too wide) in paragraph at lines 93--94
+ [][] 
+ []
+
+[80 <./Annexe1/figures/7-services.png>]) [81]
+
+Package natbib Warning: There were undefined citations.
+
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the rapport.maf file.
+\openout3 = `rapport.maf'.
+
+
+Package minitoc(hints) Warning: W0033
+(minitoc(hints))                The caption package should be 
+(minitoc(hints))                loaded BEFORE the minitoc package.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the rapport.log file.
+
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 86.
+See the caption package documentation for explanation.
+
+[82
+
+
+] (./rapport.aux (./Remerciement/remerciement.aux) (./Resumes/resumeF.aux)
+(./Resumes/resumeA.aux) (./Introduction/introduction.aux)
+(./Chapitre1/chapitre1.aux) (./Chapitre2/chapitre2.aux)
+(./Chapitre3/chapitre3.aux) (./Chapitre4/chapitre4.aux)
+(./Chapitre5/chapitre5.aux) (./Conclusion/conclusion.aux)
+(./Annexe1/annexe1.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 15212 strings out of 493876
+ 215334 string characters out of 1150568
+ 371678 words of memory out of 3000000
+ 17478 multiletter control sequences out of 10000+50000
+ 78878 words of font info for 78 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 43i,12n,50p,940b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2008/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2008/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2008/te
+xmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2008/texmf-dist/font
+s/type1/public/lm/lmbx10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/pu
+blic/lm/lmbx12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/public/lm/lm
+csc10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/public/lm/lmr10.pfb><
+/usr/local/texlive/2008/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/
+texlive/2008/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/200
+8/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2008/texmf-di
+st/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on rapport.pdf (93 pages, 3531168 bytes).
+PDF statistics:
+ 1233 PDF objects out of 1440 (max. 8388607)
+ 279 named destinations out of 1000 (max. 131072)
+ 828 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,9 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1}Architectures}{\reset@font\mtcSfont 45}{section.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1}Architecture multicouches de la solution}{\reset@font\mtcSSfont 45}{subsection.4.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2}Architecture d\'etaill\'ee de la solution}{\reset@font\mtcSSfont 47}{subsection.4.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.1}L'orchestrateur}{\reset@font\mtcSSSfont 48}{subsubsection.4.1.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2}L'installateur de Hadoop}{\reset@font\mtcSSSfont 48}{subsubsection.4.1.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.3}Le cluster Hadoop}{\reset@font\mtcSSSfont 49}{subsubsection.4.1.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2}Conception d\'etaill\'ee}{\reset@font\mtcSfont 49}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1}Etats du d\'eploiement}{\reset@font\mtcSSfont 49}{subsection.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2}Chaine compl\`ete du d\'eploiement}{\reset@font\mtcSSfont 51}{subsection.4.2.2}}

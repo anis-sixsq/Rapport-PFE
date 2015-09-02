@@ -1,0 +1,75 @@
+\BOOKMARK [0][]{section*.1}{Liste des Figures}{}
+\BOOKMARK [0][]{section*.2}{Liste des Tableaux}{}
+\BOOKMARK [0][]{section*.2}{R\351sum\351}{}
+\BOOKMARK [0][]{section*.2}{Abstract}{}
+\BOOKMARK [0][]{section*.2}{Introduction G\351n\351rale}{}
+\BOOKMARK [0][]{chapter.1}{I Contexte G\351n\351ral Et Cadre Du Projet}{}
+\BOOKMARK [1][]{section.1.1}{1 Pr\351sentation de l'entreprise SixSq}{chapter.1}
+\BOOKMARK [2][]{subsection.1.1.1}{1.1 Pr\351sentation g\351n\351rale}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.2}{1.2 Partenariats}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.3}{1.3 Recherche et D\351veloppement}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.4}{1.4 Clients et R\351f\351rences}{section.1.1}
+\BOOKMARK [1][]{section.1.2}{2 Contexte et Probl\351matique}{chapter.1}
+\BOOKMARK [1][]{section.1.3}{3 M\351thodologies adopt\351es}{chapter.1}
+\BOOKMARK [2][]{subsection.1.3.1}{3.1 Le processus de d\351veloppement \253 Scrum \273}{section.1.3}
+\BOOKMARK [2][]{subsection.1.3.2}{3.2 Formalisme de mod\351lisation \253 UML \273}{section.1.3}
+\BOOKMARK [1][]{section.1.4}{4 Planification du projet}{chapter.1}
+\BOOKMARK [0][]{chapter.2}{II Cloud Computing et Big Data}{}
+\BOOKMARK [1][]{section.2.1}{1 Big Data}{chapter.2}
+\BOOKMARK [2][]{subsection.2.1.1}{1.1 D\351finition}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.2}{1.2 Analyse des Big Data}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.3}{1.3 Applications}{section.2.1}
+\BOOKMARK [1][]{section.2.2}{2 Le Framework Hadoop}{chapter.2}
+\BOOKMARK [2][]{subsection.2.2.1}{2.1 Introduction \340 Hadoop}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.2}{2.2 L'\351cosyst\350me de Hadoop}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.3}{2.3 Cluster Hadoop}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.4}{2.4 Modes de fonctionnement}{section.2.2}
+\BOOKMARK [1][]{section.2.3}{3 Cloud Computing}{chapter.2}
+\BOOKMARK [2][]{subsection.2.3.1}{3.1 D\351finition}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.2}{3.2 Caract\351ristiques essentielles}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.3}{3.3 Mod\350les de services}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.4}{3.4 Mod\350les de d\351ploiement}{section.2.3}
+\BOOKMARK [1][]{section.2.4}{4 La Plateforme SlipStream}{chapter.2}
+\BOOKMARK [2][]{subsection.2.4.1}{4.1 Introduction}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.2}{4.2 Caract\351ristiques}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.3}{4.3 Architecture}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.4}{4.4 Cloud support\351s}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.5}{4.5 Tableau de bord}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.6}{4.6 AppStore}{section.2.4}
+\BOOKMARK [1][]{section.2.5}{5 Etat de l'art}{chapter.2}
+\BOOKMARK [2][]{subsection.2.5.1}{5.1 Comparatif des principales offres Hadoop en mode Cloud \(HaaS\)}{section.2.5}
+\BOOKMARK [2][]{subsection.2.5.2}{5.2 Solution propos\351e}{section.2.5}
+\BOOKMARK [0][]{chapter.3}{III Analyse Et Sp\351cification Des Besoins}{}
+\BOOKMARK [1][]{section.3.1}{1 Identification des acteurs du syst\350me}{chapter.3}
+\BOOKMARK [1][]{section.3.2}{2 Sp\351cification des besoins}{chapter.3}
+\BOOKMARK [2][]{subsection.3.2.1}{2.1 Besoins fonctionnels}{section.3.2}
+\BOOKMARK [2][]{subsection.3.2.2}{2.2 Besoins non fonctionnels}{section.3.2}
+\BOOKMARK [1][]{section.3.3}{3 Sp\351cification d\351taill\351e des besoins}{chapter.3}
+\BOOKMARK [2][]{subsection.3.3.1}{3.1 Cas d'utilisation de l'acteur \253 Utilisateur de Hadoop \273}{section.3.3}
+\BOOKMARK [2][]{subsection.3.3.2}{3.2 Interactions acteur-syst\350me}{section.3.3}
+\BOOKMARK [0][]{chapter.4}{IV Conception de la solution Big Data au sein de la plateforme SlipStream}{}
+\BOOKMARK [1][]{section.4.1}{1 Architectures}{chapter.4}
+\BOOKMARK [2][]{subsection.4.1.1}{1.1 Architecture multicouches de la solution}{section.4.1}
+\BOOKMARK [2][]{subsection.4.1.2}{1.2 Architecture d\351taill\351e de la solution}{section.4.1}
+\BOOKMARK [1][]{section.4.2}{2 Conception d\351taill\351e}{chapter.4}
+\BOOKMARK [2][]{subsection.4.2.1}{2.1 Etats du d\351ploiement}{section.4.2}
+\BOOKMARK [2][]{subsection.4.2.2}{2.2 Chaine compl\350te du d\351ploiement}{section.4.2}
+\BOOKMARK [0][]{chapter.5}{V R\351alisation}{}
+\BOOKMARK [1][]{section.5.1}{1 Environnement de d\351veloppement}{chapter.5}
+\BOOKMARK [1][]{section.5.2}{2 Choix techniques}{chapter.5}
+\BOOKMARK [2][]{subsection.5.2.1}{2.1 Outils et langages utilis\351s}{section.5.2}
+\BOOKMARK [2][]{subsection.5.2.2}{2.2 Fiche technique des VMs}{section.5.2}
+\BOOKMARK [1][]{section.5.3}{3 Pr\351sentation de la solution}{chapter.5}
+\BOOKMARK [2][]{subsection.5.3.1}{3.1 D\351ployer un cluster Hadoop}{section.5.3}
+\BOOKMARK [2][]{subsection.5.3.2}{3.2 Administrer le cluster Hadoop}{section.5.3}
+\BOOKMARK [2][]{subsection.5.3.3}{3.3 Connecter et utiliser la VM master}{section.5.3}
+\BOOKMARK [2][]{subsection.5.3.4}{3.4 Terminer un cluster Hadoop}{section.5.3}
+\BOOKMARK [1][]{section.5.4}{4 Evaluation de la Solution}{chapter.5}
+\BOOKMARK [2][]{subsection.5.4.1}{4.1 Temps de d\351ploiement}{section.5.4}
+\BOOKMARK [2][]{subsection.5.4.2}{4.2 Performance du cluster Hadoop}{section.5.4}
+\BOOKMARK [0][]{chapter*.58}{Conclusion G\351n\351rale et Perspectives}{}
+\BOOKMARK [0][]{section*.59}{Bibliographique}{}
+\BOOKMARK [0][]{chapter*.60}{Annexe}{}
+\BOOKMARK [1][]{section.0.1}{1 Annexe A}{chapter*.60}
+\BOOKMARK [1][]{section.0.2}{2 Annexe B}{chapter*.60}
+\BOOKMARK [1][]{section.0.3}{3 Annexe C}{chapter*.60}

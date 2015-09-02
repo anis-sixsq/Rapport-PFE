@@ -1,0 +1,91 @@
+\contentsline {chapter}{Liste des Figures}{v}{section*.1}
+\contentsline {xchapter}{}{vi}{section*.1}
+\contentsline {chapter}{Liste des Tableaux}{vii}{section*.2}
+\contentsline {xchapter}{}{vii}{section*.2}
+\contentsline {chapter}{R\'esum\'e}{viii}{section*.2}
+\contentsline {chapter}{Abstract}{ix}{section*.2}
+\contentsline {chapter}{Introduction G\'en\'erale}{1}{section*.2}
+\contentsline {chapter}{\numberline {I}Contexte G\'en\'eral Et Cadre Du Projet}{3}{chapter.1}
+\contentsline {section}{\numberline {1}Pr\'esentation de l'entreprise SixSq}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1}Pr\'esentation g\'en\'erale}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.2}Partenariats}{4}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.3}Recherche et D\'eveloppement}{4}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.4}Clients et R\'ef\'erences}{5}{subsection.1.1.4}
+\contentsline {section}{\numberline {2}Contexte et Probl\'ematique}{5}{section.1.2}
+\contentsline {section}{\numberline {3}M\'ethodologies adopt\'ees}{7}{section.1.3}
+\contentsline {subsection}{\numberline {3.1}Le processus de d\'eveloppement \IeC {\guillemotleft } Scrum \IeC {\guillemotright }}{7}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Choix m\'ethodologique}{7}{subsubsection.1.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}M\'ethodologie agile}{7}{subsubsection.1.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}M\'ethodologie Scrum}{8}{subsubsection.1.3.1.3}
+\contentsline {subsection}{\numberline {3.2}Formalisme de mod\'elisation \IeC {\guillemotleft } UML \IeC {\guillemotright }}{10}{subsection.1.3.2}
+\contentsline {section}{\numberline {4}Planification du projet}{11}{section.1.4}
+\contentsline {chapter}{\numberline {II}Cloud Computing et Big Data}{13}{chapter.2}
+\contentsline {section}{\numberline {1}Big Data}{14}{section.2.1}
+\contentsline {subsection}{\numberline {1.1}D\'efinition}{14}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {1.2}Analyse des Big Data}{15}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {1.3}Applications}{15}{subsection.2.1.3}
+\contentsline {section}{\numberline {2}Le Framework Hadoop}{16}{section.2.2}
+\contentsline {subsection}{\numberline {2.1}Introduction \`a Hadoop}{16}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2}L'\'ecosyst\`eme de Hadoop}{16}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Cluster Hadoop}{18}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.4}Modes de fonctionnement}{19}{subsection.2.2.4}
+\contentsline {section}{\numberline {3}Cloud Computing}{20}{section.2.3}
+\contentsline {subsection}{\numberline {3.1}D\'efinition}{20}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {3.2}Caract\'eristiques essentielles}{20}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {3.3}Mod\`eles de services}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {3.4}Mod\`eles de d\'eploiement}{23}{subsection.2.3.4}
+\contentsline {section}{\numberline {4}La Plateforme SlipStream}{23}{section.2.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{23}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {4.2}Caract\'eristiques}{24}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {4.3}Architecture}{25}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {4.4}Cloud support\'es}{26}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {4.5}Tableau de bord}{27}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {4.6}AppStore}{28}{subsection.2.4.6}
+\contentsline {section}{\numberline {5}Etat de l'art}{29}{section.2.5}
+\contentsline {subsection}{\numberline {5.1}Comparatif des principales offres Hadoop en mode Cloud (HaaS)}{29}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {5.2}Solution propos\'ee}{30}{subsection.2.5.2}
+\contentsline {chapter}{\numberline {III}Analyse Et Sp\'ecification Des Besoins}{32}{chapter.3}
+\contentsline {section}{\numberline {1}Identification des acteurs du syst\`eme}{32}{section.3.1}
+\contentsline {section}{\numberline {2}Sp\'ecification des besoins}{33}{section.3.2}
+\contentsline {subsection}{\numberline {2.1}Besoins fonctionnels}{33}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {2.2}Besoins non fonctionnels}{34}{subsection.3.2.2}
+\contentsline {section}{\numberline {3}Sp\'ecification d\'etaill\'ee des besoins}{35}{section.3.3}
+\contentsline {subsection}{\numberline {3.1}Cas d'utilisation de l'acteur \IeC {\guillemotleft } Utilisateur de Hadoop \IeC {\guillemotright }}{35}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Cas d'utilisation 'D\'eployer un cluster Hadoop'}{36}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Cas d'utilisation 'Utiliser les VMs de Hadoop'}{37}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Cas d'utilisation 'G\'erer les services de Hadoop'}{38}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Cas d'utilisation 'G\'erer le cluster Hadoop'}{39}{subsubsection.3.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Cas d'utilisation 'G\'erer les VMs du cluster'}{40}{subsubsection.3.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}Cas d'utilisation 'Terminer un cluster Hadoop'}{41}{subsubsection.3.3.1.6}
+\contentsline {subsection}{\numberline {3.2}Interactions acteur-syst\`eme}{42}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Cas d'utilisation 'D\'eployer un cluster Hadoop'}{42}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Cas d'utilisation 'G\'erer les services de Hadoop'}{43}{subsubsection.3.3.2.2}
+\contentsline {chapter}{\numberline {IV}Conception de la solution Big Data au sein de la plateforme SlipStream}{45}{chapter.4}
+\contentsline {section}{\numberline {1}Architectures}{45}{section.4.1}
+\contentsline {subsection}{\numberline {1.1}Architecture multicouches de la solution}{45}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {1.2}Architecture d\'etaill\'ee de la solution}{47}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}L'orchestrateur}{48}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}L'installateur de Hadoop}{48}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Le cluster Hadoop}{49}{subsubsection.4.1.2.3}
+\contentsline {section}{\numberline {2}Conception d\'etaill\'ee}{49}{section.4.2}
+\contentsline {subsection}{\numberline {2.1}Etats du d\'eploiement}{49}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {2.2}Chaine compl\`ete du d\'eploiement}{51}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {V}R\'ealisation}{54}{chapter.5}
+\contentsline {section}{\numberline {1}Environnement de d\'eveloppement}{55}{section.5.1}
+\contentsline {section}{\numberline {2}Choix techniques}{56}{section.5.2}
+\contentsline {subsection}{\numberline {2.1}Outils et langages utilis\'es}{56}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {2.2}Fiche technique des VMs}{57}{subsection.5.2.2}
+\contentsline {section}{\numberline {3}Pr\'esentation de la solution}{58}{section.5.3}
+\contentsline {subsection}{\numberline {3.1}D\'eployer un cluster Hadoop}{59}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {3.2}Administrer le cluster Hadoop}{63}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {3.3}Connecter et utiliser la VM master}{65}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {3.4}Terminer un cluster Hadoop}{67}{subsection.5.3.4}
+\contentsline {section}{\numberline {4}Evaluation de la Solution}{68}{section.5.4}
+\contentsline {subsection}{\numberline {4.1}Temps de d\'eploiement}{68}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {4.2}Performance du cluster Hadoop}{69}{subsection.5.4.2}
+\contentsline {chapter}{Conclusion G\'en\'erale et Perspectives}{72}{chapter*.58}
+\contentsline {chapter}{Bibliographique}{73}{section*.59}
+\contentsline {chapter}{Annexe}{74}{chapter*.60}
+\contentsline {section}{\numberline {1}Annexe A}{74}{section.0.1}
+\contentsline {section}{\numberline {2}Annexe B}{79}{section.0.2}
+\contentsline {section}{\numberline {3}Annexe C}{81}{section.0.3}

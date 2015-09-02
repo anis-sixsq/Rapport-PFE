@@ -1,0 +1,15 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1}Identification des acteurs du syst\`eme}{\reset@font\mtcSfont 32}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2}Sp\'ecification des besoins}{\reset@font\mtcSfont 33}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1}Besoins fonctionnels}{\reset@font\mtcSSfont 33}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2}Besoins non fonctionnels}{\reset@font\mtcSSfont 34}{subsection.3.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3}Sp\'ecification d\'etaill\'ee des besoins}{\reset@font\mtcSfont 35}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1}Cas d'utilisation de l'acteur \IeC {\guillemotleft } Utilisateur de Hadoop \IeC {\guillemotright }}{\reset@font\mtcSSfont 35}{subsection.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.1}Cas d'utilisation 'D\'eployer un cluster Hadoop'}{\reset@font\mtcSSSfont 36}{subsubsection.3.3.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.2}Cas d'utilisation 'Utiliser les VMs de Hadoop'}{\reset@font\mtcSSSfont 37}{subsubsection.3.3.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3}Cas d'utilisation 'G\'erer les services de Hadoop'}{\reset@font\mtcSSSfont 38}{subsubsection.3.3.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.4}Cas d'utilisation 'G\'erer le cluster Hadoop'}{\reset@font\mtcSSSfont 39}{subsubsection.3.3.1.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.5}Cas d'utilisation 'G\'erer les VMs du cluster'}{\reset@font\mtcSSSfont 40}{subsubsection.3.3.1.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.6}Cas d'utilisation 'Terminer un cluster Hadoop'}{\reset@font\mtcSSSfont 41}{subsubsection.3.3.1.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2}Interactions acteur-syst\`eme}{\reset@font\mtcSSfont 42}{subsection.3.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.1}Cas d'utilisation 'D\'eployer un cluster Hadoop'}{\reset@font\mtcSSSfont 42}{subsubsection.3.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.2.2}Cas d'utilisation 'G\'erer les services de Hadoop'}{\reset@font\mtcSSSfont 43}{subsubsection.3.3.2.2}}
