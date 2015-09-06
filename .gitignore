@@ -11,7 +11,7 @@
 *.bak
 *.gz
 *.out
-*.pdf
+rapport.pdf
 *~
 
 
